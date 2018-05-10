@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.l {
+    &-contents {
+        width: 1000px;
+        margin: auto;
+        padding: 15px 0 50px;
+        @include sp {
+            width: 100%;
+            padding: 0 0 0;
+        }
+    }
+}
