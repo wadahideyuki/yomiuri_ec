@@ -1,1 +1,0 @@
-# yomiuri_ec
