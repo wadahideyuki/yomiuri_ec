@@ -2,9 +2,10 @@
 
 /* カテゴリートップ */
 #pageCategory{
-	
-	@include pc{
+	@include vw(24);
 
+	@include pc{
+		font-size: 13px;
 	}
 }
 

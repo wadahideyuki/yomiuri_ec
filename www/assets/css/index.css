@@ -891,6 +891,10 @@ blockquote:before {
 
 .u- {
   /* タイトル */
+  /* ボタン */
+  /* リスト */
+  /* アイコン */
+  /* その他 */
 }
 .u-ttl1 {
   display: flex;
@@ -909,10 +913,126 @@ blockquote:before {
   display: block;
   font-size: 0.6875em;
 }
-
-.cateCondition .partTop {
+.u-btn {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 1.3333333333vw 2.6666666667vw;
+  border-radius: 1.0666666667vw;
+}
+.u-btn.withArwT {
+  padding-right: 5.3333333333vw;
+  position: relative;
+}
+.u-btn.withArwT:before {
+  content: "";
+  width: 1.3333333333vw;
+  height: 1.3333333333vw;
+  margin: auto;
+  border-style: solid;
+  border-width: 0.1333333333vw 0.1333333333vw 0 0;
+  border-color: #4d4d4d #4d4d4d transparent transparent;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0.6666666667vw;
+  bottom: 0;
+  right: 2vw;
+}
+.u-thumTxtList {
+  display: flex;
+}
+.u-thumTxtList > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.u-thumTxtList > ul > li {
+  width: 49.84375%;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.u-thumTxtList > ul > li > a {
+  display: block;
+  background-color: #fff;
+  height: 100%;
+}
+.u-thumTxtList > ul > li > a .txt {
+  padding: 2vw;
+  word-break: break-all;
+}
+.u-thumTxtList > ul > li > a .txt > span {
+  display: block;
+  height: 3em;
+  line-height: 1.5;
+  font-size: 10px;
+  font-size: 2.6666666667vw;
+}
+.u-thumTxtList > ul > li > a .txt .price {
+  display: block;
+  font-size: 14px;
+  font-size: 3.7333333333vw;
+  font-style: normal;
+}
+.u-icn:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.u-icn.is_arwTB:before {
+  background: url(../img/icon/icn_arw_tb.svg) 0 0 no-repeat;
+  background-size: contain;
+  width: 3.7333333333vw;
+  height: 3.3333333333vw;
+  margin-right: 0.6666666667vw;
+}
+.u-cateCondition h3 {
+  font-weight: normal;
+}
+.u-cateCondition h3 em {
+  font-size: 1.3333333333em;
+  font-style: normal;
+}
+.u-cateCondition .partTop {
   display: flex;
   justify-content: space-between;
+}
+.u-cateCondition .sortList1 {
+  background-color: #fff;
+  margin-top: 4vw;
+  padding: 4vw;
+  border-radius: 2.1333333333vw;
+}
+.u-cateCondition .sortList1 > ul > li + li {
+  margin-top: 1em;
+}
+.u-cateCondition .partBottom {
+  margin-top: 7.3333333333vw;
+}
+.u-cateCondition .partBottom h3 {
+  margin-bottom: 5.3333333333vw;
+}
+
+/* フォーム */
+.radio input {
+  display: none;
+}
+.radio label {
+  display: flex;
+}
+.radio label:before {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  width: 2.4vw;
+  height: 2.4vw;
+  border: 1.3333333333vw solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #f49c00;
+}
+.radio label span {
+  padding: 0.15em 0 0 0.5em;
+}
+.radio input:checked + label:before {
+  background-color: #f49c00;
 }
 
 /*elements*/
@@ -3049,4 +3169,15 @@ blockquote:before {
 }
 #top .swiper-slide {
   background-color: #fff;
+}
+
+/* カテゴリートップ */
+#pageCategory {
+  font-size: 12px;
+  font-size: 3.2vw;
+}
+@media print, screen and (min-width: 751px) {
+  #pageCategory {
+    font-size: 13px;
+  }
 }
