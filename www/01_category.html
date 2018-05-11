@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script>
+        var ua = navigator.userAgent;
+        document.open();
+        if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0) || ua.indexOf('Windows Phone') > 0) {
+            document.write('<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0">');
+        } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+            document.write('<meta content="width=1200" name="viewport">');
+        }else{
+            document.write('<meta content="width=1200" name="viewport">');
+        }
+        document.close();
+    </script>
+    <title>カテゴリページ | EC</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="EC">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://www.giants-seat.jp/assets/img/common/og.jpg">
+    <meta property="og:url" content="http://www.giants-seat.jp">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <!--全ページ共通のJS-->
+    <script src="/assets/js/jquery.js"></script>
+    <script type="module" src="/assets/js/bundle.js"></script>
+    <!--全ページ共通のJS-->
+</head>
+
+<body>
+<!--#include virtual="/assets/include/header.html" -->
+<!--ページ固有のCSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+<!--ページ固有のCSS-->
+<div class="l-contents" id="pageCategory">
+	<section>
+		<h2 class="u-ttl1">
+			<span class="img"><img src="/assets/img/category/ttl_thum1.png" alt=""></span>
+			<span class="txt">
+				G-ARMOUR 2018
+<!--				<small>ジャイアンツとアンダーアーマーのコラボ商品</small>-->
+			</span>
+		</h2>
+	</section>
+
+	<section class="cateCondition l-cont1">
+		<div class="l-inner">
+			<div class="partTop">
+				<h3 class="">対象商品 240件</h3>
+				<div class="btnSort">
+					<a href="" target="_blank">表示順</a>
+				</div>
+			</div>
+			<div class="sortList1">
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div><!-- /.l-contents -->
+
+<!--ページ固有のJS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<!--ページ固有のJS-->
+
+<!--#include virtual="/assets/include/footer.html" -->
+    
+</body>
+
+</html>
+
+
+
+
+
+

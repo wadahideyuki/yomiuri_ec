@@ -6,7 +6,18 @@
 @function retina($size) {
     @return $size * $retinaRatio;
 }
-
+@function vw1($suuji){
+	@return ($suuji / 750) * 1vw;
+}
+@function vw($suuji){
+	@return ($suuji / 750) * 100vw;
+}
+@function per1($suuji){
+	@return percentage($suuji / 100);
+}
+@function em($suuji){
+	@return ($suuji) * 1em;
+}
 
 /**
  * mixins

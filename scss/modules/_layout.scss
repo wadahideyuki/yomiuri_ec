@@ -27,4 +27,12 @@
             padding-bottom: (170/750*100%);
         }
     }
+	&-cont1{
+		padding-top: vw((750-686)/2);
+		padding-bottom: vw((750-686)/2);
+	}
+	&-inner{
+		padding-left: vw((750-686)/2);
+		padding-right: vw((750-686)/2);
+	}
 }
