@@ -715,18 +715,16 @@ blockquote:before {
     .l-contents {
       width: 100%;
       padding: 0 0 0; } }
-
-.wrapper {
+.l-wrapper {
   display: flex;
   justify-content: space-between; }
   @media print, screen and (max-width: 750px) {
-    .wrapper {
+    .l-wrapper {
       display: block; } }
-
-.content {
+.l-content {
   width: 740px; }
   @media print, screen and (max-width: 750px) {
-    .content {
+    .l-content {
       width: 100%;
       padding-bottom: 22.6666666667%; } }
 

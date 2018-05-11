@@ -10,21 +10,21 @@
             padding: 0 0 0;
         }
     }
-}
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    @include sp {
-        display: block;
+    
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            display: block;
+        }
     }
-}
-.content {
-//            padding-top: 16px;
-    width: 740px;
-    @include sp {
-        width: 100%;
-//                padding-top: 0;
-        padding-bottom: (170/750*100%);
+    &-content {
+    //            padding-top: 16px;
+        width: 740px;
+        @include sp {
+            width: 100%;
+    //                padding-top: 0;
+            padding-bottom: (170/750*100%);
+        }
     }
 }
