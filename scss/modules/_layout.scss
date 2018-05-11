@@ -35,4 +35,30 @@
 		padding-left: vw((750-686)/2);
 		padding-right: vw((750-686)/2);
 	}
+    &-pankz{
+        padding: 5px 0;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        color: #a3a2a3;
+        @include sp{
+            display: none;
+        }
+        a{
+            color:#4e4e4e; 
+        }
+        li{
+           &:after{
+                content: "/";
+                display: inline-block;
+                color:#4e4e4e; 
+               margin: 0 3px;
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
 }
