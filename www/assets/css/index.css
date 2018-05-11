@@ -894,6 +894,7 @@ blockquote:before {
   /* ボタン */
   /* リスト */
   /* アイコン */
+  /* ページャー */
   /* その他 */
 }
 .u-ttl1 {
@@ -944,9 +945,21 @@ blockquote:before {
 .u-thumTxtList > ul {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+.u-thumTxtList > ul:after {
+  content: "";
+  background-color: #ccc;
+  width: 1px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .u-thumTxtList > ul > li {
-  width: 49.84375%;
+  width: 50%;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -968,8 +981,10 @@ blockquote:before {
 }
 .u-thumTxtList > ul > li > a .txt .price {
   display: block;
+  margin-top: 0.6666666667vw;
   font-size: 14px;
   font-size: 3.7333333333vw;
+  font-weight: bold;
   font-style: normal;
 }
 .u-icn:before {
@@ -983,6 +998,27 @@ blockquote:before {
   width: 3.7333333333vw;
   height: 3.3333333333vw;
   margin-right: 0.6666666667vw;
+}
+.u-pager .box {
+  display: flex;
+}
+.u-pager a {
+  color: #fff;
+}
+.u-pager a svg {
+  height: 3em;
+}
+.u-pager a.pre {
+  background-color: #e6e6e6;
+}
+.u-pager a.nxt {
+  background-color: #666;
+}
+.u-pager a.all {
+  width: 13.1195335277%;
+}
+.u-pager a.one {
+  width: 86.8804664723%;
 }
 .u-cateCondition h3 {
   font-weight: normal;
