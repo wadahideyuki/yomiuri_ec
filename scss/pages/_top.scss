@@ -122,22 +122,6 @@
                 opacity: .8;
             }
         }
-        &__wrapper {
-            display: flex;
-            justify-content: space-between;
-            @include sp {
-                display: block;
-            }
-        }
-        &__content {
-//            padding-top: 16px;
-            width: 740px;
-            @include sp {
-                width: 100%;
-//                padding-top: 0;
-                padding-bottom: (170/750*100%);
-            }
-        }
         &__section {
             margin-bottom: 70px;
             @include sp {
