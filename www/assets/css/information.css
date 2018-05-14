@@ -918,6 +918,7 @@ blockquote:before {
 @media print, screen and (max-width: 750px) {
   .l-pankz.sp {
     display: block;
+    padding-top: 0;
   }
   .l-pankz.sp:before {
     content: "";

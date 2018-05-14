@@ -64,6 +64,7 @@
 				display: none;
 				@include sp{
 					display: block;
+					padding-top: 0;
 					&:before{
 						content: "";
 						display: block;
