@@ -21,8 +21,12 @@ $img_path: "/assets/img/";
         margin: 16px 16px 32px 16px;
         border: 1px solid $color_key;
         padding: 16px;
+        background: #FFF;
         border-radius: 5px;
         @include vw(24);
+        @include pc{
+            @include fs(16);
+        }
         li{
             margin-bottom: 12px;
             display: flex;
@@ -35,6 +39,9 @@ $img_path: "/assets/img/";
             }
             strong{
                 @include vw(32);
+                @include pc{
+                    @include fs(16);
+                }
                 em{
                     font-size: 80%;
                 }
@@ -43,6 +50,9 @@ $img_path: "/assets/img/";
         .price-code-off{
             display: block;
             @include vw(16);
+            @include pc{
+                @include fs(12);
+            }
             text-align: right;
             color: #646464;
             width: 100%;
@@ -50,13 +60,156 @@ $img_path: "/assets/img/";
         p{
         }
         @include pc{
-            @include fs(12)
+            @include fs(14)
         }
     }
     .cart-inner{
         margin: 16px;
         .font-red{
             color: #d14835;
+        }
+        .cart-items{
+            margin-top: 32px;
+            & > li{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                position: relative;
+                margin-bottom: 16px;
+                padding-bottom: 14px;
+                border-bottom: 1px solid #c9c9c9;
+                img{
+                    max-width: 100%;
+                }
+                .item-info{
+                    li{
+                        margin-top: 8px;
+                    }
+                }
+                &.price-header{
+                    @include sp{
+                        display: none;
+                    }
+                }
+                &.sp{
+                    text-align: center;
+                }
+                .photo{
+                    width: 20%;
+                    @include sp{
+                        width: 30%;
+                    }
+                }
+                .info{
+                    width: 42%;
+                    margin-left: 3%;
+                    @include sp{
+                        width: 67%;
+                    }
+                    .item-info{
+                        span{
+                            color: #646464;
+                            font-weight: normal;
+                        }
+                        &.item-info-s{
+                            @include vw(22);
+                            @include pc{
+                                @include fs(12);
+                            }
+                        }
+                        &.item-info-m{
+                            @include vw(24);
+                            @include pc{
+                                @include fs(16);
+                            }
+                        }
+                        &.item-info-l{
+                            @include vw(28);
+                            font-weight: bold;
+                            @include pc{
+                                @include fs(18);
+                            }
+                        }
+                    }
+                    
+                }
+                .price{
+                    width: 17%;
+                    margin-left: 3%;
+                    @include sp{
+                        position: absolute;
+                        left: 33%;
+                        width: 100%;
+                        bottom: 0px;
+                        .sp{
+                            display: inline-block;
+                        }
+                    }
+                }
+                .bts{
+                    margin:16px 0 0 0;
+                    .m-btn-input2{
+                        position: relative;
+                        padding-left: 1.5em;
+                        &:before{
+                            content: "×";
+                            display: inline-block;
+                            position: absolute;
+                            left: 0.5em;
+                            top: 30%;
+                        }
+                    }
+                    .m-btn-input2.btn-del{
+                        margin-right: 5px;
+                        input{
+                            @include vw(22);
+                            padding: 10px 10px 10px 3px;
+                            @include pc{
+                                @include fs(16);
+                            }
+                        }
+                       
+                    }
+                    .m-btn-input2.btn-fav{
+                        a{
+                            padding: 5px;
+                            @include vw(18);
+                            padding: 5px;
+                            line-height: 1;
+                            @include pc{
+                                @include fs(13);
+                            }
+                        }
+                    }
+                }
+                .num{
+                    width: 13%;
+                    margin-left: 2%;
+                    .select-box{
+                        margin: 0 5px 0px 0px;
+                        @include sp{
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 43%;
+                        }
+                    }
+                    @include sp{
+                        width: 50%;
+                        margin:16px 0 0 0;
+                        .m-btn-input2{
+                            display: inline-block;
+                            vertical-align: top;
+                        } input{
+                            padding: 10px;
+                            @include vw(22);
+                            @include pc{
+                                @include fs(16);
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }

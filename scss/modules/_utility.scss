@@ -623,3 +623,58 @@
 	padding-top: 15px !important;
 }
 }
+
+
+.select-box{
+    overflow: hidden;
+    border: solid 1px #c9c9c9;
+    border-radius: 5px;
+    position: relative;
+    background: #FFF;
+    &> select{
+        width: 120%;
+        border: 0px;
+        padding-left: 10px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        position: relative;
+        display: inline-block;
+      background: none transparent;
+      vertical-align: middle;
+      font-size: inherit;
+      color: inherit;
+      box-sizing: content-box;
+        line-height: 2;
+        @include vw(22);
+        @include pc{
+            @include fs(14);
+        }
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        display: block;
+        background: $color_key;
+        border-radius: 50px;
+        right: 10px;
+        top: 10px;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-top: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+        transform: rotate(135deg);
+        display: block;
+        right: 15px;
+        top: 14px;
+    }
+    
+}
+

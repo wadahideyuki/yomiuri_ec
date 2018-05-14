@@ -93,4 +93,23 @@
             @include fs(32)
         }
     }
+    &-btn-input2{
+        border: 1px solid #c9c9c9;
+        overflow: hidden;
+        display: inline-block;
+       background: #FFF;
+        border-radius: 5px;
+        a,input{
+            padding: 10px;
+            display: block;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            border: 0px;
+            @include vw(32);
+            @include pc{
+                @include fs(14)
+            }
+        }
+    } 
 }
