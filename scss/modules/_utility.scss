@@ -71,10 +71,6 @@
 				width: 50%;
 				border-bottom: 1px solid #ccc;
 				box-sizing: border-box;
-				&:nth-child(odd){
-				}
-				&:nth-child(even){
-				}
 				> a{
 					display: block;
 					background-color: #fff;
@@ -101,7 +97,6 @@
 				}
 			}
 		}
-		display: flex;
 	}
 	/* アイコン */
 	&icn{
@@ -124,6 +119,7 @@
 	}
 	/* ページャー */
 	&pager{
+		
 		.box{
 			display: flex;
 		}
