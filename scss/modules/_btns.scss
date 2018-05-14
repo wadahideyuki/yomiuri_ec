@@ -90,7 +90,7 @@
         box-sizing: border-box;
         @include vw(32);
         @include pc{
-            @include fs(32)
+            @include fs(16)
         }
     }
     &-btn-input2{
@@ -112,4 +112,28 @@
             }
         }
     } 
+    &-btn-type-1{
+        border: 1px solid $color_key;
+        display: block;
+        text-align: center;
+        color:  $color_key;
+        border-radius: 5px;
+        padding: 12px;
+        @include vw(32);
+        @include pc{
+            @include fs(16)
+        }
+    }
+    &-btn-type-2{
+        border: 1px solid #666;
+        display: block;
+        text-align: center;
+        color:  #666;
+        border-radius: 5px;
+        padding: 12px;
+        @include vw(32);
+        @include pc{
+            @include fs(16)
+        }
+    }
 }

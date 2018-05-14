@@ -75,6 +75,9 @@ textarea {
     background-color: #fff;
     border: solid 1px #c9c9c9;
     vertical-align: bottom;
+    @include sp{
+        padding: 12px 16px;
+    }
     &::-webkit-input-placeholder {
         color: $color_placeholder;
     }

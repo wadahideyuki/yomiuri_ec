@@ -14,18 +14,32 @@ $img_path: "/assets/img/";
 
 /*pages*/
 #pageCart{
+    .l-content{
+        width: 600px;
+        @include sp{
+            width: 100%;
+        }
+    }
+    .l-sidebar{
+        width: 340px;
+        @include sp{
+            width: 100%;
+        }
+    }
     @include sp{
     background: #FFF;
     }
     .price-box{
-        margin: 16px 16px 32px 16px;
+        margin: 16px 0px 32px 0px;
         border: 1px solid $color_key;
         padding: 16px;
         background: #FFF;
+        font-weight: normal;
         border-radius: 5px;
-        @include vw(24);
-        @include pc{
-            @include fs(16);
+        @include fs(16);
+        @include sp{
+            margin: 16px 16px 32px 16px; 
+            @include vw(24);
         }
         li{
             margin-bottom: 12px;
@@ -64,12 +78,15 @@ $img_path: "/assets/img/";
         }
     }
     .cart-inner{
-        margin: 16px;
+        margin: 16px 0px 32px 0px;
+        @include sp{
+            margin: 16px 16px 32px 16px; 
+        }
         .font-red{
             color: #d14835;
         }
         .cart-items{
-            margin-top: 32px;
+            margin: 32px 0 ;
             & > li{
                 display: flex;
                 justify-content: space-between;
@@ -210,6 +227,99 @@ $img_path: "/assets/img/";
                 }
             }
             
+        }
+    }
+    .id-box{
+        border:1px solid #646464;
+        border-radius: 5px;
+        overflow: hidden;
+        margin:16px 0 32px 0;
+        background: #FFFFFF;
+        dt{
+            background: #e4ddcd;
+            padding: 16px;
+            text-align: center;
+            @include vw(24);
+            @include pc{
+                @include fs(18);
+            }
+        }
+        dd{
+            padding: 16px;
+            li{
+                margin-bottom: 16px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    .fukidashi{
+        text-align: center;
+        color: $color_key;
+        position: relative;
+        span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &:after{
+            content: "";
+            height: 2em;
+            background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+            background-size: contain;
+            display: inline-block;
+            width: 2em;
+            vertical-align: middle;
+        }
+        &:before{
+            content: "";
+            height: 2em;
+            background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+            background-size: contain;
+            display: inline-block;
+            width: 2em;
+            transform: scaleX(-1);
+            vertical-align: middle;
+        }
+    }
+    .promotion-code{
+        li{
+            border-bottom: 1px solid #666;
+            margin-bottom: 8px;
+            padding-bottom: 16px;
+            &:last-child{
+                border-bottom: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                .promotion-code-inner{
+                    padding-bottom: 0px;
+                }
+            }
+            .promotion-code-inner{
+                padding:10px 10px  16px 10px;
+            }
+            .selected{
+                background: #EEE;
+                .m-btn-input{
+                    background: #FFF;
+                    border: 1px solid #666;
+                    color: #666;
+                }
+            }
+            h4{
+                @include vw(28);
+                @include pc{
+                    @include fs(18);
+                }
+            }
+            p{
+                padding: 8px 0;
+                font-weight: normal;
+                @include vw(20);
+                @include pc{
+                    @include fs(14);
+                }
+            }
         }
     }
 }

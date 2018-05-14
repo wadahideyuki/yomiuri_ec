@@ -168,24 +168,30 @@
                   <dt class="ttl-noid">GIANTS IDをお持ちでない方</dt>
                   <dd>
                     <ul>
-                      <li> 会員登録するとポイントがたまったり、<br>
-                        お得にお買い物ができます！！ </li>
-                      <li> <a href="m-btn-type-1">新規会員登録して購入へ</a> </li>
-                      <li> <a href="m-btn-type-2">ログインしないで購入へ</a> </li>
+                      <li class="fukidashi"> <span>会員登録するとポイントがたまったり、<br>
+                        お得にお買い物ができます！！</span> </li>
+                      <li> <a class="m-btn-type-1" href="#">新規会員登録して購入へ</a> </li>
+                      <li> <a class="m-btn-type-2" href="#">ログインしないで購入へ</a> </li>
                     </ul>
                   </dd>
                 </dl>
                 <input type="submit" class="m-btn-input" value="購入へ">
+                  
+                  
+              </div>
+              <div class="cart-inner">
                 <h3 class="m-title-input">プロモーションコード</h3>
                 <ul class="promotion-code">
-                  <li class="selected">
+                  <li>
+                    <div class="promotion-code-inner selected">
                     <h4><span class="font-orange">[使用中]</span> 優勝記念1000円割引</h4>
                     <p>優勝を記念して5000円以上お買い上げのお客様に1000円割引優勝を記念して5000円以上お買い上げのお客様に1000円割引</p>
-                    <a href="#" class="m-btn-input selected">使う</a> </li>
+                    <a href="#" class="m-btn-input">×  使うのをやめる</a> </div></li>
                   <li>
+                    <div class="promotion-code-inner">
                     <h4>優勝記念2000円割引</h4>
                     <p>優勝を記念して5000円以上お買い上げのお客様に2000円割引優勝を記念して5000円以上お買い上げのお客様に2000円割引</p>
-                    <a href="#" class="m-btn-input">使う</a> </li>
+                    <a href="#" class="m-btn-input">使う</a> </div></li>
                 </ul>
                 <dl class="id-box">
                   <dt>プロモーションコードをお持ちの方</dt>
@@ -296,8 +302,48 @@
             <div class="btn-box"> <a href="m-btn-type-1">買い物を続ける</a> </div>
           </div>
           <div class="l-sidebar"> 
-            <!-- SNS start -->
-            <div class="l-sidebar__block l-sidebar__block--sns"> aaa</div>
+              
+              <div class="price-box"> 
+                  <ul>
+                  <li><span>割引前の商品代金(税込)</span><span>¥7,418</span></li>
+                  <li class="price-off"><span>優勝記念1000円割引</span><span>- ¥1,000</span></li>
+                <li><a href="#" class="price-code-off">× プロモーションコードの使用を取りやめる</a></li>
+                <li class="price-total"><span><strong>商品代金<em>(税込)</em></strong>※送料は含みません</span><span><strong>¥6,418</strong></span></li>
+                  </ul>
+                
+              </div>
+              
+            <!-- プロモーションコード start -->
+            <div class="l-sidebar__block l-sidebar__block--sns"> 
+              <div class="cart-inner">
+                <h3 class="m-title-input">プロモーションコード</h3>
+                <ul class="promotion-code">
+                  <li>
+                    <div class="promotion-code-inner selected">
+                    <h4><span class="font-orange">[使用中]</span> 優勝記念1000円割引</h4>
+                    <p>優勝を記念して5000円以上お買い上げのお客様に1000円割引優勝を記念して5000円以上お買い上げのお客様に1000円割引</p>
+                    <a href="#" class="m-btn-input">×  使うのをやめる</a> </div></li>
+                  <li>
+                    <div class="promotion-code-inner">
+                    <h4>優勝記念2000円割引</h4>
+                    <p>優勝を記念して5000円以上お買い上げのお客様に2000円割引優勝を記念して5000円以上お買い上げのお客様に2000円割引</p>
+                    <a href="#" class="m-btn-input">使う</a> </div></li>
+                </ul>
+                <dl class="id-box">
+                  <dt>プロモーションコードをお持ちの方</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <input type="text" placeholder="パスワード">
+                      </li>
+                      <li>
+                        <input type="submit" class="m-btn-input" value="ログインして購入へ">
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              </div>
             <!-- SNS end --> 
           </div>
         </div>

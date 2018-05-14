@@ -194,6 +194,23 @@ textarea {
   background-color: #fff;
   border: solid 1px #c9c9c9;
   vertical-align: bottom; }
+  @media print, screen and (max-width: 750px) {
+    input[type=text],
+    input[type=tel],
+    input[type=password],
+    input[type=email],
+    input[type=search],
+    input[type=url],
+    input[type=datetime],
+    input[type=date],
+    input[type=month],
+    input[type=week],
+    input[type=time],
+    input[type=datetime-local],
+    input[type=number],
+    select,
+    textarea {
+      padding: 12px 16px; } }
   input[type=text]::-webkit-input-placeholder,
   input[type=tel]::-webkit-input-placeholder,
   input[type=password]::-webkit-input-placeholder,
@@ -365,6 +382,9 @@ blockquote:before {
 
 .noBorder {
   border: none !important; }
+
+.font-orange {
+  color: #f49c00; }
 
 /* Slider */
 .slick-slider {
@@ -646,8 +666,8 @@ blockquote:before {
   font-size: 4.2666666667vw; }
   @media print, screen and (min-width: 751px) {
     .m-btn-input {
-      font-size: 32px;
-      font-size: 2.4615384615rem; } }
+      font-size: 16px;
+      font-size: 1.2307692308rem; } }
 .m-btn-input2 {
   border: 1px solid #c9c9c9;
   overflow: hidden;
@@ -667,6 +687,32 @@ blockquote:before {
       .m-btn-input2 a, .m-btn-input2 input {
         font-size: 14px;
         font-size: 1.0769230769rem; } }
+.m-btn-type-1 {
+  border: 1px solid #f49c00;
+  display: block;
+  text-align: center;
+  color: #f49c00;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  font-size: 4.2666666667vw; }
+  @media print, screen and (min-width: 751px) {
+    .m-btn-type-1 {
+      font-size: 16px;
+      font-size: 1.2307692308rem; } }
+.m-btn-type-2 {
+  border: 1px solid #666;
+  display: block;
+  text-align: center;
+  color: #666;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  font-size: 4.2666666667vw; }
+  @media print, screen and (min-width: 751px) {
+    .m-btn-type-2 {
+      font-size: 16px;
+      font-size: 1.2307692308rem; } }
 
 .m-title {
   border-top: 1px solid #000;
@@ -1350,7 +1396,7 @@ blockquote:before {
   .select-box > select {
     width: 120%;
     border: 0px;
-    padding-left: 10px;
+    padding: 6px 6px 6px 10px;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;

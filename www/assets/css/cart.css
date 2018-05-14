@@ -145,21 +145,33 @@ fade
   width: 100%; }
 
 /*pages*/
+#pageCart .l-content {
+  width: 600px; }
+  @media print, screen and (max-width: 750px) {
+    #pageCart .l-content {
+      width: 100%; } }
+#pageCart .l-sidebar {
+  width: 340px; }
+  @media print, screen and (max-width: 750px) {
+    #pageCart .l-sidebar {
+      width: 100%; } }
 @media print, screen and (max-width: 750px) {
   #pageCart {
     background: #FFF; } }
 #pageCart .price-box {
-  margin: 16px 16px 32px 16px;
+  margin: 16px 0px 32px 0px;
   border: 1px solid #f49c00;
   padding: 16px;
   background: #FFF;
+  font-weight: normal;
   border-radius: 5px;
-  font-size: 12px;
-  font-size: 3.2vw; }
-  @media print, screen and (min-width: 751px) {
+  font-size: 16px;
+  font-size: 1.2307692308rem; }
+  @media print, screen and (max-width: 750px) {
     #pageCart .price-box {
-      font-size: 16px;
-      font-size: 1.2307692308rem; } }
+      margin: 16px 16px 32px 16px;
+      font-size: 12px;
+      font-size: 3.2vw; } }
   #pageCart .price-box li {
     margin-bottom: 12px;
     display: flex;
@@ -193,11 +205,14 @@ fade
       font-size: 14px;
       font-size: 1.0769230769rem; } }
 #pageCart .cart-inner {
-  margin: 16px; }
+  margin: 16px 0px 32px 0px; }
+  @media print, screen and (max-width: 750px) {
+    #pageCart .cart-inner {
+      margin: 16px 16px 32px 16px; } }
   #pageCart .cart-inner .font-red {
     color: #d14835; }
   #pageCart .cart-inner .cart-items {
-    margin-top: 32px; }
+    margin: 32px 0; }
     #pageCart .cart-inner .cart-items > li {
       display: flex;
       justify-content: space-between;
@@ -318,3 +333,84 @@ fade
       #pageCart .cart-inner .cart-items > li .num input {
         font-size: 16px;
         font-size: 1.2307692308rem; } }
+
+#pageCart .id-box {
+  border: 1px solid #646464;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 16px 0 32px 0;
+  background: #FFFFFF; }
+  #pageCart .id-box dt {
+    background: #e4ddcd;
+    padding: 16px;
+    text-align: center;
+    font-size: 12px;
+    font-size: 3.2vw; }
+    @media print, screen and (min-width: 751px) {
+      #pageCart .id-box dt {
+        font-size: 18px;
+        font-size: 1.3846153846rem; } }
+  #pageCart .id-box dd {
+    padding: 16px; }
+    #pageCart .id-box dd li {
+      margin-bottom: 16px; }
+      #pageCart .id-box dd li:last-child {
+        margin-bottom: 0px; }
+#pageCart .fukidashi {
+  text-align: center;
+  color: #f49c00;
+  position: relative; }
+  #pageCart .fukidashi span {
+    display: inline-block;
+    vertical-align: middle; }
+  #pageCart .fukidashi:after {
+    content: "";
+    height: 2em;
+    background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+    background-size: contain;
+    display: inline-block;
+    width: 2em;
+    vertical-align: middle; }
+  #pageCart .fukidashi:before {
+    content: "";
+    height: 2em;
+    background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+    background-size: contain;
+    display: inline-block;
+    width: 2em;
+    transform: scaleX(-1);
+    vertical-align: middle; }
+#pageCart .promotion-code li {
+  border-bottom: 1px solid #666;
+  margin-bottom: 8px;
+  padding-bottom: 16px; }
+  #pageCart .promotion-code li:last-child {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+    #pageCart .promotion-code li:last-child .promotion-code-inner {
+      padding-bottom: 0px; }
+  #pageCart .promotion-code li .promotion-code-inner {
+    padding: 10px 10px  16px 10px; }
+  #pageCart .promotion-code li .selected {
+    background: #EEE; }
+    #pageCart .promotion-code li .selected .m-btn-input {
+      background: #FFF;
+      border: 1px solid #666;
+      color: #666; }
+  #pageCart .promotion-code li h4 {
+    font-size: 14px;
+    font-size: 3.7333333333vw; }
+    @media print, screen and (min-width: 751px) {
+      #pageCart .promotion-code li h4 {
+        font-size: 18px;
+        font-size: 1.3846153846rem; } }
+  #pageCart .promotion-code li p {
+    padding: 8px 0;
+    font-weight: normal;
+    font-size: 10px;
+    font-size: 2.6666666667vw; }
+    @media print, screen and (min-width: 751px) {
+      #pageCart .promotion-code li p {
+        font-size: 14px;
+        font-size: 1.0769230769rem; } }
