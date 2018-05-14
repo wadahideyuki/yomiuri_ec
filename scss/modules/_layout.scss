@@ -35,10 +35,18 @@
 	&-cont1{
 		padding-top: vw((750-686)/2);
 		padding-bottom: vw((750-686)/2);
+		@include pc{
+			padding-top: 30px;
+			padding-bottom: 15px;
+		}
 	}
 	&-inner{
 		padding-left: vw((750-686)/2);
 		padding-right: vw((750-686)/2);
+		@include pc{
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
     &-pankz{
 			padding: 5px 0;
