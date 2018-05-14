@@ -18,6 +18,16 @@
 					font-size: em(22/32);
 				}
 			}
+			@include pc{
+				.img{
+				}
+				.txt{
+					font-size: 30px;
+					small{
+						font-size: 0.4em;
+					}
+				}
+			}
 		}
 	}
 	/* ボタン */
@@ -119,33 +129,105 @@
 	}
 	/* ページャー */
 	&pager{
-		
+		background-color: #fff;
+		padding: vw(70) 0 vw(30);
+		@include vw(24);
+		line-height: 1;
+		*{
+			line-height: 1;
+		}
 		.box{
 			display: flex;
 		}
 		a{
-			color: #fff;
-			svg{
-				height: 3em;
-			}
-			&.pre{
+			border-style: solid;
+			border-width: 0 0 vw(8);
+			&.pre{//前
 				background-color: #e6e6e6;
+				color: #ababab;
+				border-color: #ccc;
 			}
-			&.nxt{
+			&.nxt{//後
 				background-color: #666;
+				color: #f2f2f2;
+				border-color: #000;
 			}
-			&.all{
-				width: percentage(90/686);
+			&.all{//最初、最後
+				width: percentage(150/686);
+				div{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+					padding: vw(30) vw(10) vw(25);
+					span{
+						display: flex;
+						align-items: center;
+						height: 100%;
+						margin-top: -0.15em;
+						&:before{
+							content: "";
+							display: block;
+							width: 0.6em;
+							height: 0.6em;
+							border-style: solid;
+							border-width: vw(2) 0 0 vw(2);
+						}
+					}
+				}
 				&.pre{
+					div{
+						border-right: vw(2) solid #999;
+						span{
+							padding-left: vw(10);
+							border-left: vw(2) solid #ababab;
+							&:before{
+								transform: rotate(-45deg);
+							}
+						}
+					}
 				}
 				&.nxt{
+					div{
+						border-left: vw(2) solid #999;
+						span{
+							padding-right: vw(10);
+							border-right: vw(2) solid #fff;
+							&:before{
+								transform: rotate(135deg);
+							}
+						}
+					}
 				}
 			}
-			&.one{
-				width: percentage((686-90)/686);
+			&.one{//1ページ前後
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: percentage((686-150)/686);
+				padding: vw(30) vw(10) vw(25);
+				span{
+					display: block;
+					width: 0.6em;
+					height: 0.6em;
+					margin-top: -0.15em;
+					border-style: solid;
+					border-width: vw(2) 0 0 vw(2);
+				}
 				&.pre{
+					span{
+						margin-right: 0.5em;
+						border-color: #ababab;
+						transform: rotate(-45deg);
+					}
 				}
 				&.nxt{
+					flex-direction: row-reverse;
+					span{
+						margin-left: 0.5em;
+						border-color: #fff;
+						transform: rotate(135deg);
+					}
 				}
 			}
 		}
