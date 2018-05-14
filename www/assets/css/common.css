@@ -1079,6 +1079,7 @@ blockquote:before {
   display: flex;
   background-color: #fff;
   align-items: center;
+  border-bottom: 2px solid #999;
 }
 .u-ttl1 .img {
   width: 20.9333333333%;
@@ -1088,6 +1089,7 @@ blockquote:before {
 }
 .u-ttl1 .txt {
   padding: 1.3333333333vw 8.5333333333vw;
+  color: #313131;
   font-size: 16px;
   font-size: 4.2666666667vw;
 }
@@ -1096,6 +1098,9 @@ blockquote:before {
   font-size: 0.6875em;
 }
 @media print, screen and (min-width: 751px) {
+  .u-ttl1 {
+    border-bottom: none;
+  }
   .u-ttl1 .img {
     width: 28.5135135135%;
   }
@@ -1200,12 +1205,15 @@ blockquote:before {
     margin-right: 5px;
   }
 }
+.u-thumTxtList {
+  background-color: #fff;
+}
 .u-thumTxtList > ul {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
-.u-thumTxtList > ul:after {
+.u-thumTxtList > ul:before {
   content: "";
   background-color: #ccc;
   width: 1px;
@@ -1215,6 +1223,16 @@ blockquote:before {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1;
+}
+.u-thumTxtList > ul:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .u-thumTxtList > ul > li {
   width: 50%;
@@ -1225,6 +1243,34 @@ blockquote:before {
   display: block;
   background-color: #fff;
   height: 100%;
+  position: relative;
+}
+.u-thumTxtList > ul > li > a .rankNo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d4d4d;
+  width: 6.6666666667vw;
+  height: 6.6666666667vw;
+  padding: 0.2666666667vw 0.8vw 0 0;
+  color: #fff;
+  font-size: 13.5px;
+  font-size: 3.6vw;
+  font-weight: bold;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 2.6666666667vw;
+  left: 2.6666666667vw;
+}
+.u-thumTxtList > ul > li > a .rankNo.is_no1 {
+  background-color: #a88627;
+}
+.u-thumTxtList > ul > li > a .rankNo.is_no2 {
+  background-color: #b3b3b3;
+}
+.u-thumTxtList > ul > li > a .rankNo.is_no3 {
+  background-color: #c69c6d;
 }
 .u-thumTxtList > ul > li > a .txt {
   padding: 2vw;
@@ -1246,16 +1292,33 @@ blockquote:before {
   font-style: normal;
 }
 @media print, screen and (min-width: 751px) {
+  .u-thumTxtList {
+    background-color: transparent;
+  }
   .u-thumTxtList > ul {
     margin-right: -8px;
   }
-  .u-thumTxtList > ul:after {
+  .u-thumTxtList > ul:before, .u-thumTxtList > ul:after {
     content: normal;
   }
   .u-thumTxtList > ul > li {
     width: 179px;
     margin: 0 8px 19px 0;
     border-bottom: none;
+  }
+  .u-thumTxtList > ul > li > a {
+    transition: 0.3s;
+  }
+  .u-thumTxtList > ul > li > a:hover {
+    opacity: 0.7;
+  }
+  .u-thumTxtList > ul > li > a .rankNo {
+    width: 26px;
+    height: 26px;
+    padding: 2px 4px 0 0;
+    font-size: 13px;
+    top: 12px;
+    left: 10px;
   }
   .u-thumTxtList > ul > li > a .img img {
     width: 100%;
@@ -1427,7 +1490,8 @@ blockquote:before {
   }
   .u-pager a.one {
     width: auto;
-    padding: 0 30px;
+    margin: 0 30px;
+    padding: 0;
   }
   .u-pager a.one span {
     width: 8px;
@@ -1571,6 +1635,11 @@ blockquote:before {
   }
 }
 
+@media print, screen and (min-width: 751px) {
+  .pcPT15 {
+    padding-top: 15px !important;
+  }
+}
 /*elements*/
 .l-footer {
   text-align: center;

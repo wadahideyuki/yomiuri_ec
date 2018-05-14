@@ -33,13 +33,13 @@ opacity
 /*
 fade
  */
-/* カテゴリートップ */
-#pageCategory {
+/* ランキング */
+#pageRanking {
   font-size: 12px;
   font-size: 3.2vw;
 }
 @media print, screen and (min-width: 751px) {
-  #pageCategory {
+  #pageRanking {
     font-size: 13px;
   }
 }
