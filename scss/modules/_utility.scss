@@ -105,34 +105,6 @@
 						}
 					}
 				}
-				&TtoB{
-					padding-right: vw(40);
-					position: relative;
-					&:before{
-						content: "";
-						width: vw(10);
-						height: vw(10);
-						margin: auto;
-						border-style: solid;
-						border-width: vw(1) vw(1) 0 0;
-						border-color: #4d4d4d #4d4d4d transparent transparent;
-						transform: rotate(-45deg);
-						position: absolute;
-						top: vw(5);
-						bottom: 0;
-						right: vw(15);
-					}
-					@include pc{
-						padding-right: 35px;
-						&:before{
-							width: 8px;
-							height: 8px;
-							border-width: 1px 1px 0 0;
-							top: 5px;
-							right: 10px;
-						}
-					}
-				}
 			}
 		}
 	}
@@ -447,12 +419,40 @@
 			em{
 				font-size: em(32/24);
 				font-style: normal;
+				font-weight: bold;
 			}
 		}
 		.partTop{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			.btnSort{
+				a{
+					padding-right: vw(40);
+					position: relative;
+					&:before{
+						content: "";
+						width: vw(10);
+						height: vw(10);
+						margin: auto;
+						border-style: solid;
+						border-width: vw(1) vw(1) 0 0;
+						border-color: #4d4d4d #4d4d4d transparent transparent;
+						transform: rotate(135deg);
+						position: absolute;
+						top: 0;
+						bottom: vw(5);
+						right: vw(15);
+					}
+					&.show{
+						&:before{
+							transform: rotate(-45deg);
+							top: vw(5);
+							bottom: 0;
+						}
+					}
+				}
+			}
 		}
 		.sortList1{
 			display: none;
@@ -477,10 +477,26 @@
 		@include pc{
 			h3{
 				em{
-					font-weight: bold;
 				}
 			}
 			.partTop{
+				.btnSort{
+					a{
+						padding-right: 35px;
+						&:before{
+							width: 8px;
+							height: 8px;
+							border-width: 1px 1px 0 0;
+							bottom: 5px;
+							right: 10px;
+						}
+						&.show{
+							&:before{
+								top: 5px;
+							}
+						}
+					}
+				}
 			}
 			.sortList1{
 				margin-top: 15px;

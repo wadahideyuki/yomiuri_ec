@@ -1181,36 +1181,6 @@ blockquote:before {
     right: 10px;
   }
 }
-.u-btn.withArwTtoB {
-  padding-right: 5.3333333333vw;
-  position: relative;
-}
-.u-btn.withArwTtoB:before {
-  content: "";
-  width: 1.3333333333vw;
-  height: 1.3333333333vw;
-  margin: auto;
-  border-style: solid;
-  border-width: 0.1333333333vw 0.1333333333vw 0 0;
-  border-color: #4d4d4d #4d4d4d transparent transparent;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 0.6666666667vw;
-  bottom: 0;
-  right: 2vw;
-}
-@media print, screen and (min-width: 751px) {
-  .u-btn.withArwTtoB {
-    padding-right: 35px;
-  }
-  .u-btn.withArwTtoB:before {
-    width: 8px;
-    height: 8px;
-    border-width: 1px 1px 0 0;
-    top: 5px;
-    right: 10px;
-  }
-}
 .u-icn:before {
   content: "";
   display: inline-block;
@@ -1485,11 +1455,35 @@ blockquote:before {
 .u-cateCondition h3 em {
   font-size: 1.3333333333em;
   font-style: normal;
+  font-weight: bold;
 }
 .u-cateCondition .partTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.u-cateCondition .partTop .btnSort a {
+  padding-right: 5.3333333333vw;
+  position: relative;
+}
+.u-cateCondition .partTop .btnSort a:before {
+  content: "";
+  width: 1.3333333333vw;
+  height: 1.3333333333vw;
+  margin: auto;
+  border-style: solid;
+  border-width: 0.1333333333vw 0.1333333333vw 0 0;
+  border-color: #4d4d4d #4d4d4d transparent transparent;
+  transform: rotate(135deg);
+  position: absolute;
+  top: 0;
+  bottom: 0.6666666667vw;
+  right: 2vw;
+}
+.u-cateCondition .partTop .btnSort a.show:before {
+  transform: rotate(-45deg);
+  top: 0.6666666667vw;
+  bottom: 0;
 }
 .u-cateCondition .sortList1 {
   display: none;
@@ -1508,8 +1502,18 @@ blockquote:before {
   margin-bottom: 5.3333333333vw;
 }
 @media print, screen and (min-width: 751px) {
-  .u-cateCondition h3 em {
-    font-weight: bold;
+  .u-cateCondition .partTop .btnSort a {
+    padding-right: 35px;
+  }
+  .u-cateCondition .partTop .btnSort a:before {
+    width: 8px;
+    height: 8px;
+    border-width: 1px 1px 0 0;
+    bottom: 5px;
+    right: 10px;
+  }
+  .u-cateCondition .partTop .btnSort a.show:before {
+    top: 5px;
   }
   .u-cateCondition .sortList1 {
     margin-top: 15px;
