@@ -1,11 +1,61 @@
 @charset "utf-8";
 
 $img_path: "/assets/img/";
+@import "../lib/properties";
+@import "../lib/mixin";
+@import "../modules/slide";
 
-@import "../_common";
-
+.m-itemList{
+    img{
+        width: 100%;
+    }
+}
 
 /*pages*/
 #pageCart{
+    @include sp{
     background: #FFF;
+    }
+    .price-box{
+        margin: 16px 16px 32px 16px;
+        border: 1px solid $color_key;
+        padding: 16px;
+        border-radius: 5px;
+        @include vw(24);
+        li{
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            &.price-off{
+                color: #0071bc;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            strong{
+                @include vw(32);
+                em{
+                    font-size: 80%;
+                }
+            }
+        }
+        .price-code-off{
+            display: block;
+            @include vw(16);
+            text-align: right;
+            color: #646464;
+            width: 100%;
+        }
+        p{
+        }
+        @include pc{
+            @include fs(12)
+        }
+    }
+    .cart-inner{
+        margin: 16px;
+        .font-red{
+            color: #d14835;
+        }
+    }
 }

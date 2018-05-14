@@ -67,6 +67,10 @@ input[type=number],
 select,
 textarea {
     padding: 6px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
     font-family: $font-family-basic;
     background-color: #fff;
     border: solid 1px #c9c9c9;

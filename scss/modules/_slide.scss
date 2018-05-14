@@ -1,0 +1,93 @@
+$img_path: "/assets/img/";
+@import "../lib/_properties";
+@import "../lib/_mixin";
+
+.m-itemList {
+    img{
+        width: 100%;
+    }
+    
+    .swiper-slide{
+        background: #FFF;
+    }
+}
+
+//slick → swiper　換装
+.m-checked-slide{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .swiper-container {
+        width: 610px;
+        margin: 0 auto;
+        font-weight: bold;
+        @include sp {
+            width: 92%;
+            margin: 0 auto;
+        }
+    }
+}
+.m-swiper-wrap {//sp時のすべてのswiperアンカー
+    position: relative;
+    .swiper-container {
+        @include sp {
+            width: 92%;
+            margin: 0 auto;
+        }
+    }
+}
+.swiper-container {
+    width: 610px;
+    margin: 0 auto;
+}
+.m-swiper-control {
+    &__prev, &__next, &__prevR, &__nextR {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        transition: opacity .25s;
+        z-index: 10;
+        top: 35%;
+        width: 40px;
+        height: 40px;
+        @include pc {
+            opacity: 0.75;
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+        @include sp {
+            top: 25%;
+            width: 34px;
+            height: 34px;
+        }
+        &.swiper-button-disabled {
+            opacity: 0.25;
+        }
+    }
+    &__prev, &__prevR {
+        background-image: url(#{$img_path}icon/arrow_gray_prev.png);
+        left: 0;
+        @include sp {
+            left: 2px;
+        }
+    }
+    &__next, &__nextR {
+        background-image: url(#{$img_path}icon/arrow_gray_next.png);
+        right: 0;
+        @include sp {
+            right: 2px;
+        }
+    }
+}
+.m-summery {
+            font-weight: bold;
+            padding: 12px;
+            @include sp {
+                @include vw(20);
+                padding: (15/250*100%) 0;
+            }
+        }

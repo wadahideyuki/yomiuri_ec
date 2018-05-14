@@ -78,4 +78,19 @@
             }
         }
     }
+    
+    &-btn-input{
+        background: $color_key;
+        border-radius: 5px;
+        color: #FFF;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        @include vw(32);
+        @include pc{
+            @include fs(32)
+        }
+    }
 }

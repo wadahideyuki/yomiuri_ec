@@ -26,16 +26,14 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/information.css">
-    <!--全ページ共通のJS-->
-    <script src="/assets/js/jquery.js"></script>
-    <script type="module" src="/assets/js/bundle.js"></script>
-    <!--全ページ共通のJS-->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/cart.css">
     </head>
 
     <body>
     <!--#include virtual="/assets/include/header.html" --> 
-    <!--ページ固有のCSS--> 
+    <!--ページ固有のCSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
     <!--ページ固有のCSS--> 
     <span class="hoge"></span>
     <ul class="l-pankz">
@@ -46,23 +44,197 @@
       <div class="l-container">
         <div class="l-wrapper">
           <div class="l-content">
-            <article class="cotent-box">
+            <div class="cotent-box">
               <div class="p-title">
                 <div class="p-title-inner">
                   <h2>カート</h2>
                 </div>
               </div>
+              <div class="price-box"> 
+                  <ul>
+                  <li><span>割引前の商品代金(税込)</span>¥7,418</span></li>
+                  <li class="price-off"><span>優勝記念1000円割引</span><span>- ¥1,000</span></li>
+                <li><a href="#" class="price-code-off">× プロモーションコードの使用を取りやめる</a></li>
+                <li class="price-total"><span><strong>商品代金<em>(税込)</em></strong>※送料は含みません</span><span><strong>¥6,418</strong></span></li>
+                  </ul>
                 
-                <div class="price-box">
-                割引前の商品代金(税込)¥7,418<br>
-                優勝記念1000円割引- ¥1,000
-                    <p>× プロモーションコードの使用を取りやめる</p>
-                    <p>商品代金(税込)※送料は含みません　¥6,418</p>
+              </div>
+              <div class="cart-inner">
+                <h3 class="m-title-input">カートに入っている商品(2点)</h3>
+                <p>カート内の商品は、現時点ではお客様のために確保されておりません。商品の在庫状態によっては、<span class="font-red">カートに入れた後でも品切れとなる可能性がございます</span>ので、予めご了承ください。</p>
+                <ul>
+                  <li class="pc">
+                    <div class="photo">商品画像</div>
+                    <div class="info">商品情報</div>
+                    <div class="price">価格（税込み）</div>
+                    <div class="num">数量</div>
+                  </li>
+                  <li>
+                    <div class="photo"> <img src="assets/img/sample/img_goods1.png"> </div>
+                    <div class="info">
+                      <p>UA レプリカユニホーム 2018ホーム選手UA レプリカレプリカユニ...2018 ホ</p>
+                      <ul>
+                        <li>[選手名(2018)]  #7 長野久義</li>
+                        <li>[ UAサイズ ]  SM</li>
+                        <li>[ネーム]  HAYATO</li>
+                      </ul>
+                    </div>
+                    <div class="price"><span class="sp">価格：</span>¥2,700</div>
+                    <div class="num">
+                      <select name="select" id="select">
+                        <option>1</option>
+                      </select>
+                    </div>
+                    <div class="bts"> <a href="#" class="btn-del">削除</a> <a href="#" class="btn-del btn-fav">お気に入りに<br>
+                      追加して削除</a> </div>
+                  </li>
+                </ul>
+                <dl class="id-box">
+                  <dt>GIANTS ID 登録情報を利用</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <input type="text" placeholder="メールアドレスまたはジャイアンツID">
+                      </li>
+                      <li>
+                        <input type="text" placeholder="パスワード">
+                      </li>
+                      <li>
+                        <input type="submit" class="m-btn-input" value="ログインして購入へ">
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="id-box">
+                  <dt class="ttl-noid">GIANTS IDをお持ちでない方</dt>
+                  <dd>
+                    <ul>
+                      <li> 会員登録するとポイントがたまったり、<br>
+                        お得にお買い物ができます！！ </li>
+                      <li> <a href="m-btn-type-1">新規会員登録して購入へ</a> </li>
+                      <li> <a href="m-btn-type-2">ログインしないで購入へ</a> </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <input type="submit" class="m-btn-input" value="購入へ">
+                <h3 class="m-title-input">プロモーションコード</h3>
+                <ul class="promotion-code">
+                  <li class="selected">
+                    <h4><span class="font-orange">[使用中]</span> 優勝記念1000円割引</h4>
+                    <p>優勝を記念して5000円以上お買い上げのお客様に1000円割引優勝を記念して5000円以上お買い上げのお客様に1000円割引</p>
+                    <a href="#" class="m-btn-input selected">使う</a> </li>
+                  <li>
+                    <h4>優勝記念2000円割引</h4>
+                    <p>優勝を記念して5000円以上お買い上げのお客様に2000円割引優勝を記念して5000円以上お買い上げのお客様に2000円割引</p>
+                    <a href="#" class="m-btn-input">使う</a> </li>
+                </ul>
+                <dl class="id-box">
+                  <dt>プロモーションコードをお持ちの方</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <input type="text" placeholder="パスワード">
+                      </li>
+                      <li>
+                        <input type="submit" class="m-btn-input" value="ログインして購入へ">
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            
+            <!-- ほしいものリスト start -->
+            <section class="m-itemList">
+              <div class="m-title">
+                <h2 class="m-title__tag"> <strong>ほしいものリスト</strong> <span>FAVORITE</span> </h2>
+              </div>
+              <div class="m-checked-slide">
+                <div class="swiper-container swiperContainer">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem01.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> ジャビットグッズ　ラメアクリルキーホルダー(ダッシュ) </p>
+                          <p class="m-itemPrice"> ¥800 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem02.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> UA GIANTS CCT W Tee LINE G　スチールヘザー </p>
+                          <p class="m-itemPrice"> ¥3,780 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem03.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> ゴールドラインシフォンツートンシュシュ </p>
+                          <p class="m-itemPrice"> ¥1,296 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem04.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> ミニオン×ジャイアンツ　パーカー(子供用) </p>
+                          <p class="m-itemPrice"> ¥4,320 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem01.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> ジャビットグッズ　ラメアクリルキーホルダー(ダッシュ) </p>
+                          <p class="m-itemPrice"> ¥800 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem02.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> UA GIANTS CCT W Tee LINE G　スチールヘザー </p>
+                          <p class="m-itemPrice"> ¥3,780 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem03.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> ゴールドラインシフォンツートンシュシュ </p>
+                          <p class="m-itemPrice"> ¥1,296 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                    <div class="swiper-slide"> <a href="">
+                      <dl class="m-item">
+                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem04.jpg" alt=""> </dt>
+                      <dd class="m-summery">
+                          <p class="m-itemTxt"> ミニオン×ジャイアンツ　パーカー(子供用) </p>
+                          <p class="m-itemPrice"> ¥4,320 </p>
+                        </dd>
+                    </dl>
+                      </a> </div>
+                  </div>
                 </div>
-                
-                
-                
-            </article>
+                <ul class="m-swiper-control">
+                  <li class="m-swiper-control__prev"></li>
+                  <li class="m-swiper-control__next"></li>
+                </ul>
+              </div>
+            </section>
+            <!-- 最近チェックした商品 CHECKED end -->
+            
+            <div class="btn-box"> <a href="m-btn-type-1">買い物を続ける</a> </div>
           </div>
           <div class="l-sidebar"> 
             <!-- SNS start -->
@@ -74,9 +246,15 @@
     </div>
     <!-- /.contents --> 
 
+    <!--全ページ共通のJS--> 
+    <script src="/assets/js/jquery.js"></script> 
+    <script src="/assets/js/lineup.js"></script> 
+    <script src="/assets/js/main.js"></script> 
+    <!--全ページ共通のJS--> 
     <!--ページ固有のJS--> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script> 
+    <script src="/assets/js/cart.js"></script> 
     <!--ページ固有のJS--> 
 
     <!--#include virtual="/assets/include/footer.html" -->

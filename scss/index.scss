@@ -1,12 +1,7 @@
 @charset "utf-8";
-
 $img_path: "/assets/img/";
-
-@import "_common";
-
 
 /*pages*/
 #top{
 	@import "pages/_top";
 }
-@import "pages/_category";//カテゴリートップ
