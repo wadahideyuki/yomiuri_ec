@@ -1394,6 +1394,7 @@ blockquote:before {
   border-left: 0.2666666667vw solid #ababab;
 }
 .u-pager a.all.pre div span:before {
+  border-color: #ababab;
   transform: rotate(-45deg);
 }
 .u-pager a.all.nxt div {
@@ -1404,6 +1405,7 @@ blockquote:before {
   border-right: 0.2666666667vw solid #fff;
 }
 .u-pager a.all.nxt div span:before {
+  border-color: #fff;
   transform: rotate(135deg);
 }
 .u-pager a.one {
@@ -1487,6 +1489,9 @@ blockquote:before {
   .u-pager a.all.nxt div span {
     padding-right: 6px;
     border-right: 1px solid #4e4e4e;
+  }
+  .u-pager a.all.nxt div span:before {
+    border-color: #4e4e4e;
   }
   .u-pager a.one {
     width: auto;

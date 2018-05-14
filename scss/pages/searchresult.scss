@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import "../lib/_properties";
+@import "../lib/_mixin";
+
+$img_path: "/assets/img/";
+
+/* 検索結果 */
+#pageSearchresult{
+	@include vw(24);
+
+	@include pc{
+		font-size: 13px;
+	}
+}
+
+

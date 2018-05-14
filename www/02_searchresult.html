@@ -15,7 +15,7 @@
         }
         document.close();
     </script>
-    <title>人気ランキング | EC</title>
+    <title>検索結果ページ | EC</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta property="og:title" content="EC">
@@ -27,7 +27,7 @@
     <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/common.css">
-    <link rel="stylesheet" href="/assets/css/ranking.css">
+    <link rel="stylesheet" href="/assets/css/searchresult.css">
 </head>
 
 <body>
@@ -39,27 +39,36 @@
 
 <ul class="l-pankz">
 	<li><a href="/">トップ</a></li>
-	<li>ランキング</li>
+	<li>坂本勇人</li>
 </ul>
 
-<div class="l-contents" id="pageRanking">
+<div class="l-contents" id="pageSearchresult">
 	<div class="l-wrapper">
 		<div class="l-content">
-			<section>
-				<h2 class="u-ttl1">
-					<span class="img"><img src="/assets/img/sample/ttl_thum1.png" alt=""></span>
-					<span class="txt">
-						ランキング
-					</span>
-				</h2>
+			<section class="u-cateCondition l-cont1">
+				<div class="l-inner">
+					<div class="partTop">
+						<h3>対象商品 <em>240</em>件</h3>
+						<div class="btnSort">
+							<a class="u-btn show" href="#"><span class="u-icn is_arwTB">表示順</span></a>
+						</div>
+					</div>
+					<div class="sortList1" style="display: block;">
+						<ul>
+							<li><div class="radio"><input type="radio" name="sort1" value="sortVal1" id="sortVal1"><label for="sortVal1"><span>新着順</span></label></div></li>
+							<li><div class="radio"><input type="radio" name="sort1" value="sortVal1" id="sortVal2"><label for="sortVal2"><span>人気順</span></label></div></li>
+							<li><div class="radio"><input type="radio" name="sort1" value="sortVal1" id="sortVal3"><label for="sortVal3"><span>価格が安い順</span></label></div></li>
+							<li><div class="radio"><input type="radio" name="sort1" value="sortVal1" id="sortVal4"><label for="sortVal4"><span>価格が高い順</span></label></div></li>
+						</ul>
+					</div>
+				</div>
 			</section>
 
 
-			<section class="u-thumTxtList pcPT15">
+			<section class="u-thumTxtList">
 				<ul>
 					<li>
 						<a href="#">
-							<em class="rankNo is_no1">1</em>
 							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
 							<div class="txt">
 								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
@@ -69,7 +78,6 @@
 					</li>
 					<li>
 						<a href="#">
-							<em class="rankNo is_no2">2</em>
 							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
 							<div class="txt">
 								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
@@ -79,7 +87,6 @@
 					</li>
 					<li>
 						<a href="#">
-							<em class="rankNo is_no3">3</em>
 							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
 							<div class="txt">
 								<span>長野久義ハンドパペット</span>
@@ -89,7 +96,6 @@
 					</li>
 					<li>
 						<a href="#">
-							<em class="rankNo">4</em>
 							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
 							<div class="txt">
 								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
@@ -99,7 +105,6 @@
 					</li>
 					<li>
 						<a href="#">
-							<em class="rankNo">5</em>
 							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
 							<div class="txt">
 								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
@@ -109,57 +114,6 @@
 					</li>
 					<li>
 						<a href="#">
-							<em class="rankNo">6</em>
-							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
-							<div class="txt">
-								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
-								<em class="price">¥ 2,700</em>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<em class="rankNo">7</em>
-							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
-							<div class="txt">
-								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
-								<em class="price">¥ 2,700</em>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<em class="rankNo">8</em>
-							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
-							<div class="txt">
-								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
-								<em class="price">¥ 2,700</em>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<em class="rankNo">9</em>
-							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
-							<div class="txt">
-								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
-								<em class="price">¥ 2,700</em>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<em class="rankNo">10</em>
-							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
-							<div class="txt">
-								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
-								<em class="price">¥ 2,700</em>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<em class="rankNo">88</em>
 							<div class="img"><img src="/assets/img/sample/img_goods1.png" alt=""></div>
 							<div class="txt">
 								<span>長野久義ハンドパペット「チョーグル」長野久義ハンドパペッ...</span>
@@ -193,7 +147,7 @@
 			<div class="l-pankz sp">
 				<ul>
 					<li><a href="/">トップ</a></li>
-					<li>ランキング</li>
+					<li>坂本勇人</li>
 				</ul>
 			</div>
 		</div>

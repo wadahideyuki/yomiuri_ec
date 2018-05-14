@@ -318,6 +318,7 @@
 							padding-left: vw(10);
 							border-left: vw(2) solid #ababab;
 							&:before{
+								border-color: #ababab;
 								transform: rotate(-45deg);
 							}
 						}
@@ -330,6 +331,7 @@
 							padding-right: vw(10);
 							border-right: vw(2) solid #fff;
 							&:before{
+								border-color: #fff;
 								transform: rotate(135deg);
 							}
 						}
@@ -425,6 +427,7 @@
 								padding-right: 6px;
 								border-right: 1px solid #4e4e4e;
 								&:before{
+									border-color: #4e4e4e;
 								}
 							}
 						}
