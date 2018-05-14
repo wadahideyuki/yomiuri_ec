@@ -26,6 +26,11 @@
     //                padding-top: 0;
             padding-bottom: (170/750*100%);
         }
+        .p-title{
+            @include pc{
+                display: none;
+            }
+        }
     }
 	&-cont1{
 		padding-top: vw((750-686)/2);

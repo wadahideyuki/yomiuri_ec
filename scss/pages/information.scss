@@ -1,13 +1,10 @@
 @charset "utf-8";
-
-$img_path: "/assets/img/";
-
-@import "_common";
+@import "../lib/_properties";
+@import "../lib/_mixin";
 
 
 /*pages*/
-//@charset "utf-8";
-#information{
+#pageInformation{
     .cotent-box{
         background: #FFF;
         padding: 20px;
