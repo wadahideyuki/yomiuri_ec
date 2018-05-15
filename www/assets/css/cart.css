@@ -177,9 +177,11 @@ fade
   padding: 12px; }
   @media print, screen and (max-width: 750px) {
     .m-summery {
-      font-size: 10px;
-      font-size: 2.6666666667vw;
       padding: 6% 0; } }
+  @media print, screen and (max-width: 750px) and (max-width: 750px) {
+    .m-summery {
+      font-size: 10px;
+      font-size: 2.6666666667vw; } }
 
 .m-itemList img {
   width: 100%; }
@@ -214,9 +216,12 @@ fade
   font-size: 1.2307692308rem; }
   @media print, screen and (max-width: 750px) {
     #pageCart .price-box {
-      margin: 4% 4%  6% 4%;
+      margin: 4% 4%  6% 4%; } }
+  @media print, screen and (max-width: 750px) and (max-width: 750px) {
+    #pageCart .price-box {
       font-size: 12px;
       font-size: 3.2vw; } }
+
   #pageCart .price-box li {
     margin-bottom: 12px;
     display: flex;
@@ -227,23 +232,26 @@ fade
       margin-bottom: 0px;
       font-size: 10px;
       font-size: 0.7692307692rem; }
-    #pageCart .price-box li strong {
-      font-size: 16px;
-      font-size: 4.2666666667vw; }
-      @media print, screen and (min-width: 751px) {
-        #pageCart .price-box li strong {
-          font-size: 16px;
-          font-size: 1.2307692308rem; } }
-      #pageCart .price-box li strong em {
-        font-size: 70%;
-        font-style: normal; }
+    @media print, screen and (max-width: 750px) {
+      #pageCart .price-box li strong {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+    @media print, screen and (min-width: 751px) {
+      #pageCart .price-box li strong {
+        font-size: 16px;
+        font-size: 1.2307692308rem; } }
+    #pageCart .price-box li strong em {
+      font-size: 70%;
+      font-style: normal; }
   #pageCart .price-box .price-code-off {
     display: block;
-    font-size: 8px;
-    font-size: 2.1333333333vw;
     text-align: right;
     color: #646464;
     width: 100%; }
+    @media print, screen and (max-width: 750px) {
+      #pageCart .price-box .price-code-off {
+        font-size: 8px;
+        font-size: 2.1333333333vw; } }
     @media print, screen and (min-width: 751px) {
       #pageCart .price-box .price-code-off {
         font-size: 11px;
@@ -297,24 +305,28 @@ fade
         #pageCart .cart-inner .cart-items > li .info .item-info span {
           color: #646464;
           font-weight: normal; }
-        #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
-          font-size: 11px;
-          font-size: 2.9333333333vw; }
-          @media print, screen and (min-width: 751px) {
-            #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
-              font-size: 12px;
-              font-size: 0.9230769231rem; } }
-        #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
-          font-size: 12px;
-          font-size: 3.2vw; }
-          @media print, screen and (min-width: 751px) {
-            #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
-              font-size: 16px;
-              font-size: 1.2307692308rem; } }
+        @media print, screen and (max-width: 750px) {
+          #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
+            font-size: 11px;
+            font-size: 2.9333333333vw; } }
+        @media print, screen and (min-width: 751px) {
+          #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
+            font-size: 12px;
+            font-size: 0.9230769231rem; } }
+        @media print, screen and (max-width: 750px) {
+          #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
+            font-size: 12px;
+            font-size: 3.2vw; } }
+        @media print, screen and (min-width: 751px) {
+          #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
+            font-size: 16px;
+            font-size: 1.2307692308rem; } }
         #pageCart .cart-inner .cart-items > li .info .item-info.item-info-l {
-          font-size: 14px;
-          font-size: 3.7333333333vw;
           font-weight: bold; }
+          @media print, screen and (max-width: 750px) {
+            #pageCart .cart-inner .cart-items > li .info .item-info.item-info-l {
+              font-size: 14px;
+              font-size: 3.7333333333vw; } }
           @media print, screen and (min-width: 751px) {
             #pageCart .cart-inner .cart-items > li .info .item-info.item-info-l {
               font-size: 18px;
@@ -343,20 +355,23 @@ fade
             top: 30%; }
         #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-del {
           margin-right: 5px; }
-          #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-del input {
-            font-size: 11px;
-            font-size: 2.9333333333vw; }
-            @media print, screen and (min-width: 751px) {
-              #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-del input {
-                font-size: 14px;
-                font-size: 1.0769230769rem;
-                padding: 9px 10px 9px 3px; } }
+          @media print, screen and (max-width: 750px) {
+            #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-del input {
+              font-size: 11px;
+              font-size: 2.9333333333vw; } }
+          @media print, screen and (min-width: 751px) {
+            #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-del input {
+              font-size: 14px;
+              font-size: 1.0769230769rem;
+              padding: 9px 10px 9px 3px; } }
         #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-fav a {
           padding: 5px;
-          font-size: 9px;
-          font-size: 2.4vw;
           padding: 5px;
           line-height: 1; }
+          @media print, screen and (max-width: 750px) {
+            #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-fav a {
+              font-size: 9px;
+              font-size: 2.4vw; } }
           @media print, screen and (min-width: 751px) {
             #pageCart .cart-inner .cart-items > li .bts .m-btn-input2.btn-fav a {
               font-size: 11px;
@@ -380,9 +395,11 @@ fade
               display: inline-block;
               vertical-align: top; }
             #pageCart .cart-inner .cart-items > li .num input {
-              padding: 10px;
-              font-size: 11px;
-              font-size: 2.9333333333vw; } }
+              padding: 10px; } }
+    @media print, screen and (max-width: 750px) and (max-width: 750px) {
+      #pageCart .cart-inner .cart-items > li .num input {
+        font-size: 11px;
+        font-size: 2.9333333333vw; } }
     @media print, screen and (max-width: 750px) and (min-width: 751px) {
       #pageCart .cart-inner .cart-items > li .num input {
         font-size: 16px;
@@ -400,12 +417,14 @@ fade
   #pageCart .id-box dt {
     background: #e4ddcd;
     padding: 8px;
-    text-align: center;
-    font-size: 12px;
-    font-size: 3.2vw; }
+    text-align: center; }
     @media print, screen and (max-width: 750px) {
       #pageCart .id-box dt {
         padding: 4%; } }
+    @media print, screen and (max-width: 750px) {
+      #pageCart .id-box dt {
+        font-size: 12px;
+        font-size: 3.2vw; } }
     @media print, screen and (min-width: 751px) {
       #pageCart .id-box dt {
         font-size: 14px;
@@ -463,18 +482,21 @@ fade
       background: #FFF;
       border: 1px solid #666;
       color: #666; }
-  #pageCart .promotion-code li h4 {
-    font-size: 14px;
-    font-size: 3.7333333333vw; }
-    @media print, screen and (min-width: 751px) {
-      #pageCart .promotion-code li h4 {
-        font-size: 16px;
-        font-size: 1.2307692308rem; } }
+  @media print, screen and (max-width: 750px) {
+    #pageCart .promotion-code li h4 {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+  @media print, screen and (min-width: 751px) {
+    #pageCart .promotion-code li h4 {
+      font-size: 16px;
+      font-size: 1.2307692308rem; } }
   #pageCart .promotion-code li p {
     padding: 4% 0;
-    font-weight: normal;
-    font-size: 10px;
-    font-size: 2.6666666667vw; }
+    font-weight: normal; }
+    @media print, screen and (max-width: 750px) {
+      #pageCart .promotion-code li p {
+        font-size: 10px;
+        font-size: 2.6666666667vw; } }
     @media print, screen and (min-width: 751px) {
       #pageCart .promotion-code li p {
         font-size: 14px;

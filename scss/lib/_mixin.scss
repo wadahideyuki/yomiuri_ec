@@ -44,8 +44,10 @@
 font-sizeにvwを設定
  */
 @mixin vw($size) {
+    @include sp{
     font-size:( $size /2 ) *1px;
     font-size:( $size /750 *100 ) *1vw;
+    }
 }
 
 @mixin fs($size) {

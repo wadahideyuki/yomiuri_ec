@@ -34,9 +34,10 @@ opacity
 fade
  */
 /* 検索結果 */
-#pageSearchresult {
-  font-size: 12px;
-  font-size: 3.2vw; }
-  @media print, screen and (min-width: 751px) {
-    #pageSearchresult {
-      font-size: 13px; } }
+@media print, screen and (max-width: 750px) {
+  #pageSearchresult {
+    font-size: 12px;
+    font-size: 3.2vw; } }
+@media print, screen and (min-width: 751px) {
+  #pageSearchresult {
+    font-size: 13px; } }

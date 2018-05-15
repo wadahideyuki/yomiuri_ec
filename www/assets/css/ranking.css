@@ -34,9 +34,10 @@ opacity
 fade
  */
 /* ランキング */
-#pageRanking {
-  font-size: 12px;
-  font-size: 3.2vw; }
-  @media print, screen and (min-width: 751px) {
-    #pageRanking {
-      font-size: 13px; } }
+@media print, screen and (max-width: 750px) {
+  #pageRanking {
+    font-size: 12px;
+    font-size: 3.2vw; } }
+@media print, screen and (min-width: 751px) {
+  #pageRanking {
+    font-size: 13px; } }
