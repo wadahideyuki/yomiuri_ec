@@ -26,6 +26,9 @@
                 transform: translate(0,-50%)
             }
         }
+        &.noline{
+            border: 0px;
+        }
         &__tag {
             display: inline-block;
             padding: 0 40px;
@@ -37,7 +40,7 @@
                 background-color: transparent;
                 position: static;
                 padding: (25/750*100%) (75/750*100%);
-                border-bottom: 4px solid #999;
+                border-bottom: 1px solid #999;
             }
             .icon-ranking {
                 display: inline-block;
@@ -90,7 +93,7 @@
         padding-left: 16px;
         box-sizing: border-box;
         line-height: 1.2;
-       @include fs(24);
+       @include fs(18);
         @include sp{
             @include vw(32);
         }
