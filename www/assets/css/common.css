@@ -1890,7 +1890,7 @@ textarea {
 .formBox {
   padding-bottom: 10%;
 }
-.formBox input, .formBox select, .formBox textarea {
+.formBox input, .formBox textarea {
   width: 100%;
 }
 .formBox input {

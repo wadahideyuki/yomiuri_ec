@@ -745,7 +745,7 @@ textarea{
 
 .formBox{
 	padding-bottom: 10%;
-	input, select, textarea{
+	input, textarea{
 		width: 100%;
 	}
 	input{
@@ -809,8 +809,6 @@ textarea{
 	}
 	@include pc{
 		padding-bottom: 0;
-		input, select, textarea{
-		}
 		input, textarea{
 		}
 		select{
