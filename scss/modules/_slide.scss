@@ -3,6 +3,15 @@ $img_path: "/assets/img/";
 @import "../lib/_mixin";
 
 .m-itemList {
+    margin-bottom: 32px;
+    @include sp{
+        padding: 3% 0 2% 0;
+        background: #EEE;
+        margin-bottom: 0px;
+    }
+    .m-itemTxt{
+        font-weight: normal;
+    }
     img{
         width: 100%;
     }
@@ -12,34 +21,76 @@ $img_path: "/assets/img/";
     }
 }
 
-//slick → swiper　換装
-.m-checked-slide{
+.m-swiper-pagination{
+    text-align: center;
+    display: none;
+    @include sp{
+        display: block;
+        padding: 2%;
+        border-top: 1px solid #CCC;
+        border-bottom: 1px solid #999999;
+    }
+    .swiper-pagination-bullet{
+        margin: 0 1%;
+        padding: 1.3%;
+        background: #e4ddcd;
+    }
+    .swiper-pagination-bullet-active{
+        background: $color-key;
+    }
+}
+.m-swiper{
     position: relative;
+    
+    @include sp{
+        background: #FFF;
+        border-top: 3px solid #c6c6c6;
+    }
     img{
         width: 100%;
     }
     .swiper-container {
-        width: 610px;
+        width: 480px;
         margin: 0 auto;
         font-weight: bold;
         @include sp {
-            width: 92%;
+            width: 100%;
             margin: 0 auto;
+            .m-summery{
+                padding: 0 3vw 3vw 3vw;
+            }
+        }
+    }
+    .swiper-slide{
+        @include sp{
+            &:before{
+                content: "";
+                left: 0px;
+                top: 0px;
+                display: block;
+                height: 500px;
+                width: 1px;
+                background: #CCC;
+                position: absolute;
+                
+            }
+            
+        }
+        &.swiper-slide-active{
+            &:before{
+                display: none;
+            }
         }
     }
 }
-.m-swiper-wrap {//sp時のすべてのswiperアンカー
+.m-swiper-wrap {//sp時のすべてのswiperアンカーitemList
     position: relative;
     .swiper-container {
         @include sp {
-            width: 92%;
+            width: 100%;
             margin: 0 auto;
         }
     }
-}
-.swiper-container {
-    width: 610px;
-    margin: 0 auto;
 }
 .m-swiper-control {
     &__prev, &__next, &__prevR, &__nextR {
@@ -60,6 +111,7 @@ $img_path: "/assets/img/";
             }
         }
         @include sp {
+            display: none;
             top: 25%;
             width: 34px;
             height: 34px;

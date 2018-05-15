@@ -40,5 +40,26 @@
             @include fs(16);
         }
     }
+    .l-sidebar__block--news{
+        border-bottom: 2px solid #c9c9c9;
+        li{
+            padding: 24px 0;
+            margin: 0 16px;
+            border-bottom: 1px solid #c9c9c9;
+            font-weight: normal;
+            &:last-child{
+                border: 0px;
+            }
+            a{
+                display: block;
+                span{
+                    @include fs(11);
+                    color: #6f6f6f;
+                    display: block;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+    }
 }
 

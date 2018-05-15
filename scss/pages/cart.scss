@@ -14,9 +14,17 @@ $img_path: "/assets/img/";
 
 /*pages*/
 #pageCart{
+    .cotent-box{
+        @include sp{
+            border-bottom: 1px solid #b2b2b2;
+            background: #FFF;
+        }
+        
+    }
     .l-content{
         width: 600px;
         @include sp{
+            background: #EEE;
             width: 100%;
         }
     }
@@ -30,7 +38,7 @@ $img_path: "/assets/img/";
     background: #FFF;
     }
     .price-box{
-        margin: 16px 0px 32px 0px;
+        margin: 16px 0px 16px 0px;
         border: 1px solid $color_key;
         padding: 16px;
         background: #FFF;
@@ -38,7 +46,7 @@ $img_path: "/assets/img/";
         border-radius: 5px;
         @include fs(16);
         @include sp{
-            margin: 16px 16px 32px 16px; 
+            margin: 4% 4%  6% 4%; 
             @include vw(24);
         }
         li{
@@ -50,6 +58,7 @@ $img_path: "/assets/img/";
             }
             &:last-child{
                 margin-bottom: 0px;
+                @include fs(10);
             }
             strong{
                 @include vw(32);
@@ -57,7 +66,8 @@ $img_path: "/assets/img/";
                     @include fs(16);
                 }
                 em{
-                    font-size: 80%;
+                    font-size: 70%;
+                    font-style: normal;
                 }
             }
         }
@@ -65,7 +75,7 @@ $img_path: "/assets/img/";
             display: block;
             @include vw(16);
             @include pc{
-                @include fs(12);
+                @include fs(11);
             }
             text-align: right;
             color: #646464;
@@ -80,13 +90,16 @@ $img_path: "/assets/img/";
     .cart-inner{
         margin: 16px 0px 32px 0px;
         @include sp{
-            margin: 16px 16px 32px 16px; 
+            margin: 4% 4%  6% 4%; 
         }
         .font-red{
             color: #d14835;
         }
         .cart-items{
             margin: 32px 0 ;
+            @include sp{
+                margin: 6% 0 ;
+            }
             & > li{
                 display: flex;
                 justify-content: space-between;
@@ -104,6 +117,9 @@ $img_path: "/assets/img/";
                     }
                 }
                 &.price-header{
+                    div{
+                        text-align: center;
+                    }
                     @include sp{
                         display: none;
                     }
@@ -112,7 +128,7 @@ $img_path: "/assets/img/";
                     text-align: center;
                 }
                 .photo{
-                    width: 20%;
+                    width: 105px;
                     @include sp{
                         width: 30%;
                     }
@@ -152,10 +168,10 @@ $img_path: "/assets/img/";
                 }
                 .price{
                     width: 17%;
-                    margin-left: 3%;
+                    margin-left: 4%;
                     @include sp{
                         position: absolute;
-                        left: 33%;
+                        left: 34%;
                         width: 100%;
                         bottom: 0px;
                         .sp{
@@ -180,9 +196,9 @@ $img_path: "/assets/img/";
                         margin-right: 5px;
                         input{
                             @include vw(22);
-                            padding: 10px 10px 10px 3px;
                             @include pc{
-                                @include fs(16);
+                                @include fs(14);
+                                padding: 9px 10px 9px 3px;
                             }
                         }
                        
@@ -194,20 +210,21 @@ $img_path: "/assets/img/";
                             padding: 5px;
                             line-height: 1;
                             @include pc{
-                                @include fs(13);
+                                @include fs(11);
                             }
                         }
                     }
                 }
                 .num{
-                    width: 13%;
+                    width: 14%;
                     margin-left: 2%;
                     .select-box{
-                        margin: 0 5px 0px 0px;
+                        margin: 0 5px 8px 15px;
                         @include sp{
                             display: inline-block;
                             vertical-align: top;
-                            width: 43%;
+                            width: 44%;
+                            margin: 0 2% 0 0;
                         }
                     }
                     @include sp{
@@ -233,21 +250,33 @@ $img_path: "/assets/img/";
         border:1px solid #646464;
         border-radius: 5px;
         overflow: hidden;
-        margin:16px 0 32px 0;
+        margin:16px 0;
         background: #FFFFFF;
+        @include sp{
+            margin: 4% 0 6% 0;
+        }
         dt{
             background: #e4ddcd;
-            padding: 16px;
+            padding: 8px;
             text-align: center;
+            @include sp{
+                padding: 4%;
+            }
             @include vw(24);
             @include pc{
-                @include fs(18);
+                @include fs(14);
+            }
+            &.ttl-noid{
+                background: #e6e6e6;
             }
         }
         dd{
             padding: 16px;
             li{
                 margin-bottom: 16px;
+                @include sp{
+                    margin-bottom: 4%;
+                }
                 &:last-child{
                     margin-bottom: 0px;
                 }
@@ -285,8 +314,8 @@ $img_path: "/assets/img/";
     .promotion-code{
         li{
             border-bottom: 1px solid #666;
-            margin-bottom: 8px;
-            padding-bottom: 16px;
+            margin-bottom: 2%;
+            padding-bottom: 4%;
             &:last-child{
                 border-bottom: 0px;
                 margin-bottom: 0px;
@@ -296,7 +325,7 @@ $img_path: "/assets/img/";
                 }
             }
             .promotion-code-inner{
-                padding:10px 10px  16px 10px;
+                padding:4%;
             }
             .selected{
                 background: #EEE;
@@ -309,17 +338,30 @@ $img_path: "/assets/img/";
             h4{
                 @include vw(28);
                 @include pc{
-                    @include fs(18);
+                    @include fs(16);
                 }
             }
             p{
-                padding: 8px 0;
+                padding: 4% 0;
                 font-weight: normal;
                 @include vw(20);
                 @include pc{
                     @include fs(14);
                 }
             }
+        }
+    }
+    .l-sidebar__promotioncode{
+        padding-top: 20px;
+    }
+    .btn-box{
+        margin: 0 auto;
+        @include sp{
+            padding-top: 1%;        
+        }
+        .m-btn-type-1{
+            max-width: 310px;
+            margin: 0 auto;
         }
     }
 }

@@ -1,26 +1,55 @@
 //swiper
 var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if(windowWidth > 750) {
-    //PC時のみの　最近チェックした商品
-    var swiperChecked = new Swiper('.swiper-container', {
+    //PC時のみの　ほしいものリスト
+    var swiperChecked = new Swiper('.swiper-container.swiper-favolite', {
         slidesPerView: 3,
         spaceBetween: 10,
         loop: true,
         autoHeight: true,
         navigation: {
-            nextEl: '.m-swiper-control__next',
-            prevEl: '.m-swiper-control__prev',
+            nextEl: '.favolite__next',
+            prevEl: '.favolite__prev',
+        }
+    });
+    var swiperChecked = new Swiper('.swiper-container.swiper-bundleitem', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        autoHeight: true,
+        navigation: {
+            nextEl: '.bundleitem__next',
+            prevEl: '.bundleitem__prev',
         }
     });
 } else {
     //SPのswiper共通
-    var allSwiper = new Swiper('.swiperContainer', {
+    var allSwiper = new Swiper('.swiperContainer.swiper-favolite', {
         slidesPerView: 3,
-        spaceBetween: 5,
+        spaceBetween: 1,
         loop: true,
-        navigation: {
-            nextEl: '.m-swiper-control__next',
-            prevEl: '.m-swiper-control__prev',
+        pagination: {
+            el: '.favolite-pagination',
+            type: 'bullets',
         }
+        /*navigation: {
+            nextEl: '.swiper-favolite .m-swiper-control__next',
+            prevEl: '.swiper-favolite .m-swiper-control__prev',
+        }*/
+    });
+    var allSwiper = new Swiper('.swiperContainer.swiper-bundleitem', {
+        slidesPerView: 3,
+        spaceBetween: 1,
+        loop: true,
+        pagination: {
+            el: '.bundleitem-pagination',
+            type: 'bullets',
+        }
+        /*navigation: {
+            nextEl: '.swiper-bundleitem .m-swiper-control__next',
+            prevEl: '.swiper-bundleitem .m-swiper-control__prev',
+        }*/
     });
 }
+
+
