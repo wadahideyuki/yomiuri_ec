@@ -807,6 +807,22 @@ textarea{
 			}
 		}
 	}
+	&.is_conf{
+		.formTbl{
+			> tbody{
+				> tr{
+					> th{
+						margin-top: 8%;
+					}
+					> td{
+						margin-top: 2%;
+						padding-left: 1em;
+						@include vw(28);
+					}
+				}
+			}
+		}
+	}
 	@include pc{
 		padding-bottom: 0;
 		input, textarea{
@@ -869,6 +885,22 @@ textarea{
 						}
 						> td{
 							padding-top: 30px;
+						}
+					}
+				}
+			}
+		}
+		&.is_conf{
+			.formTbl{
+				> tbody{
+					> tr{
+						> th{
+							margin-top: 0;
+						}
+						> td{
+							margin-top: 0;
+							padding-left: 0;
+							font-size: 16px;
 						}
 					}
 				}
