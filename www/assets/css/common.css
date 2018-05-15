@@ -218,7 +218,7 @@ textarea {
   box-sizing: border-box;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
   font-size: 12px;
-  background-color: #fff;
+  background-color: #fcfcfc;
   border: solid 1px #c9c9c9;
   vertical-align: bottom;
   box-shadow: none;
@@ -1809,7 +1809,7 @@ blockquote:before {
   border: solid 1px #c9c9c9;
   border-radius: 5px;
   position: relative;
-  background: #FFF;
+  background: #fcfcfc;
 }
 .select-box > select {
   width: 120%;
@@ -1920,9 +1920,6 @@ textarea {
 }
 .formBox input, .formBox textarea {
   width: 100%;
-}
-.formBox input {
-  background-color: #fcfcfc;
 }
 .formBox select {
   font-size: 14px;

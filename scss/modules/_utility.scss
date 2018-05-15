@@ -658,7 +658,7 @@
     border: solid 1px #c9c9c9;
     border-radius: 5px;
     position: relative;
-    background: #FFF;
+    background: #fcfcfc;
     &> select{
         width: 120%;
         border: 0px;
@@ -758,9 +758,6 @@ textarea{
 	input, textarea{
 		width: 100%;
 	}
-	input{
-		background-color: #fcfcfc;
-	}
 	select{
 		@include vw(28);
 	}
@@ -835,8 +832,6 @@ textarea{
 	}
 	@include pc{
 		padding-bottom: 0;
-		input, textarea{
-		}
 		select{
 			font-size: 14px;
 		}
