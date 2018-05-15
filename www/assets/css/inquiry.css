@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+/**
+ * easing
+ */
+/**
+ * function
+ * 値を返す
+ */
+/**
+ * mixins
+ * ブロックを返す
+ */
+/*
+デバイス定義
+ */
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+/*
+clearfix
+ */
+/*
+iOS smooth scroll
+ */
+/*
+opacity
+ */
+/*
+fade
+ */
+/* お問い合わせ */
+#pageInquiry {
+  font-size: 12px;
+  font-size: 3.2vw;
+}
+@media print, screen and (min-width: 751px) {
+  #pageInquiry {
+    background-color: #fff;
+    padding-top: 0;
+    font-size: 13px;
+  }
+}

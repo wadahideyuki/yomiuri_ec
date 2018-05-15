@@ -38,6 +38,31 @@
 				}
 			}
 		}
+		&2{
+			margin-bottom: 1.5em;
+			padding: 1em 0;
+			color: #313131;
+			@include vw(32);
+			border-bottom: 2px solid #999;
+			box-shadow: 0 vw(8) 0 #e6e6e6;
+			@include pc{
+				margin-bottom: 50px;
+				padding: 20px 0 15px;
+				font-size: 30px;
+				border-bottom-width: 1px;
+				box-shadow: 0 8px 0 #f4f4f4;
+			}
+		}
+		&3{
+			display: none;
+			@include pc{
+				display: block;
+				margin-bottom: 30px;
+				padding-left: 10px;
+				font-size: 18px;
+				border-left: 4px solid $color_key;
+			}
+		}
 	}
 	/* ボタン */
 	&btn{
@@ -134,6 +159,17 @@
 						margin-right: 5px;
 					}
 				}
+			}
+		}
+	}
+	/* テキスト */
+	&lead{
+		&1{
+			@include vw(24);
+			@include pc{
+				padding: 0 15px;
+				font-size: 12px;
+				line-height: 1.8;
 			}
 		}
 	}
@@ -617,14 +653,6 @@
 	}
 }
 
-
-@include pc{
-.pcPT15{
-	padding-top: 15px !important;
-}
-}
-
-
 .select-box{
     overflow: hidden;
     border: solid 1px #c9c9c9;
@@ -675,6 +703,198 @@
         right: 15px;
         top: 14px;
     }
-    
 }
+
+textarea{
+	resize: none;
+}
+
+.required{
+	display: inline-block;
+	margin-right: 0.5em;
+	padding: 0.2em 0.5em;
+	color: #d14835;
+	font-style: normal;
+	@include vw(15);
+	vertical-align: middle;
+	border: 1px solid #d14835;
+	@include pc{
+		margin-right: 0.7em;
+		padding: 0.2em 0.5em 0.1em;
+		font-size: 10px;
+	}
+}
+.err{
+	background-color: #fae6e8 !important;
+	border: 2px solid #d14835 !important;
+	@include pc{
+	}
+}
+.errTxt{
+	margin-top: 0.8em;
+	color: #e26f7a;
+	@include vw(24);
+	@include pc{
+		margin-top: 0.8em;
+		color: #f00;
+		font-size: 12px;
+		font-weight: bold;
+	}
+}
+
+
+.formBox{
+	padding-bottom: 10%;
+	input, select, textarea{
+		width: 100%;
+	}
+	input{
+		background-color: #fcfcfc;
+	}
+	select{
+		@include vw(28);
+	}
+	textarea{
+		height: 10em;
+	}
+	input[type="submit"]{
+		background-color: $color_key;
+		@include vw(32);
+	}
+	table{
+		width: 100%;
+	}
+	.formTbl{
+		display: block;
+		color: #3a3a3a;
+		> tbody{
+			display: block;
+			> tr{
+				display: block;
+				> th{
+					display: block;
+					margin-top: 10%;
+					@include vw(32);
+					text-align: left;
+					&.mtHf{
+						margin-top: 3%;
+					}
+				}
+				> td{
+					display: block;
+					margin-top: 3%;
+					@include vw(26);
+				}
+			}
+		}
+		.layer2{
+			tr{
+				> th{
+					width: 10%;
+					font-weight: normal;
+					text-align: left;
+				}
+				> td{
+				}
+				+ tr{
+					> th{
+						padding-top: 5%;
+					}
+					> td{
+						padding-top: 5%;
+					}
+				}
+			}
+		}
+	}
+	@include pc{
+		padding-bottom: 0;
+		input, select, textarea{
+		}
+		input, textarea{
+		}
+		select{
+			font-size: 14px;
+		}
+		textarea{
+			height: 140px;
+		}
+		input[type="submit"]{
+			margin: auto;
+			font-size: 16px;
+		}
+		table{
+		}
+		.formTbl{
+			display: table;
+			> tbody{
+				display: table-row-group;
+				> tr{
+					display: table-row;
+					& + tr{
+						border-top: 1px solid #c9c9c9;
+					}
+					&:last-child{
+						border-top: none;
+						> th{
+							padding-top: 15px;
+						}
+					}
+					> th{
+						display: table-cell;
+						width: 260px;
+						margin-top: 0;
+						padding: 35px 0;
+						font-size: 16px;
+						&.mtHf{
+							margin-top: 0;
+						}
+					}
+					> td{
+						display: table-cell;
+						margin-top: 0;
+						padding: 35px 0;
+						font-size: 12px;
+					}
+				}
+			}
+			.layer2{
+				tr{
+					> th{
+						width: 3em;
+					}
+					> td{
+					}
+					+ tr{
+						> th{
+							padding-top: 30px;
+						}
+						> td{
+							padding-top: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* その他便利クラス */
+//SP
+@include sp{
+	.spBgWhite{background-color: #fff;}
+}
+//PC
+@include pc{
+	.pcW220{width: 220px !important;}
+	.pcW296{width: 296px !important;}
+	.pcW340{width: 340px !important;}
+	.pcW625{width: 625px !important;}
+	.pcPT15{
+		padding-top: 15px !important;
+	}
+}
+
+
 

@@ -2,13 +2,22 @@
 
 .l {
     &-contents {
-        width: 1000px;
-        margin: auto;
-        padding: 15px 0 50px;
-        @include sp {
-            width: 100%;
-            padding: 0 0 0;
-        }
+			width: 1000px;
+			margin: auto;
+			padding: 15px 0 50px;
+			@include sp {
+				width: 100%;
+				padding: 0 0 0;
+			}
+			&.is_single{
+				width: auto;
+				.l-wrapper{
+					display: block;
+				}
+				.l-content{
+					width: auto;
+				}
+			}
     }
     
     &-wrapper {
@@ -19,18 +28,18 @@
         }
     }
     &-content {
-    //            padding-top: 16px;
-        width: 740px;
-        @include sp {
-            width: 100%;
-    //                padding-top: 0;
-            padding-bottom: (170/750*100%);
-        }
-        .p-title{
-            @include pc{
-                display: none;
-            }
-        }
+			//            padding-top: 16px;
+			width: 740px;
+			@include sp {
+				width: 100%;
+				//                padding-top: 0;
+				padding-bottom: (170/750*100%);
+			}
+			.p-title{
+				@include pc{
+					display: none;
+				}
+			}
     }
 	&-cont1{
 		padding-top: vw((750-686)/2);
@@ -41,11 +50,28 @@
 		}
 	}
 	&-inner{
+		display: block;
 		padding-left: vw((750-686)/2);
 		padding-right: vw((750-686)/2);
 		@include pc{
 			padding-left: 0;
 			padding-right: 0;
+		}
+		&.is_type{
+			&2{
+				@include pc{
+					width: 1000px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+			&3{
+				@include pc{
+					width: 913px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
 		}
 	}
     &-pankz{
