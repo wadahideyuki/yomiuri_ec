@@ -27,14 +27,17 @@
     <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/common.css">
+    <!--ページ固有のCSS-->
     <link rel="stylesheet" href="/assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    <!--ページ固有のCSS--> 
     </head>
 
     <body>
-    <!--#include virtual="/assets/include/header.html" --> 
-    <!--ページ固有のCSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
-    <!--ページ固有のCSS--> 
+    
+    <header class="l-header">
+       <!--#include virtual="/assets/include/header.html" -->
+   </header>  
     <span class="hoge"></span>
     <ul class="l-pankz">
       <li><a href="/">トップ</a></li>
@@ -205,18 +208,15 @@
 				</div>
 			</div>
 		</div>
-    <!-- /.contents --> 
-
-    <!--全ページ共通のJS--> 
-    <script src="/assets/js/jquery.js"></script> 
-    <script src="/assets/js/lineup.js"></script> 
-    <script src="/assets/js/main.js"></script> 
-    <!--全ページ共通のJS--> 
-    <!--ページ固有のJS--> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script> 
-    <script src="/assets/js/cart.js"></script> 
-    <!--ページ固有のJS--> 
+    <!-- /.contents -->
+<!--全ページ共通のJS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/main.js"></script>
+<!--全ページ共通のJS-->
+<!--ページ固有のJS--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
+<script src="/assets/js/cart.js"></script> 
+<!--ページ固有のJS--> 
 
     <!--#include virtual="/assets/include/footer.html" -->
 

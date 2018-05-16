@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <script>
@@ -27,112 +27,91 @@
     <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/common.css">
+    <!--ページ固有のCSS-->
     <link rel="stylesheet" href="/assets/css/inquiry.css">
-</head>
+    <!--ページ固有のCSS-->
+    </head>
 
-<body>
-<!--#include virtual="/assets/include/header.html" -->
-<!--ページ固有のCSS-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
-<!--ページ固有のCSS-->
-
-
+    <body>
+<header class="l-header"> 
+      <!--#include virtual="/assets/include/header.html" --> 
+    </header>
 <ul class="l-pankz">
-	<li><a href="/">トップ</a></li>
-	<li>お問い合わせ内容</li>
-</ul>
-
+      <li><a href="/">トップ</a></li>
+      <li>お問い合わせ内容</li>
+    </ul>
 <div class="l-contents is_single" id="pageInquiry">
-	<div class="l-wrapper">
-		<div class="l-content">
-			<div class="spBgWhite">
-				<h2 class="u-ttl2">
-					<span class="l-inner is_type2">
-						お問い合わせ内容
-					</span>
-				</h2>
+      <div class="l-wrapper">
+    <div class="l-content">
+          <div class="spBgWhite">
+        <h2 class="u-ttl2"> <span class="l-inner is_type2"> お問い合わせ内容 </span> </h2>
+        <div class="l-inner is_type3">
+              <h3 class="u-ttl3">確認</h3>
+              <form action="">
+            <div class="formBox is_conf">
+                  <table class="formTbl">
+                <tbody>
+                      <tr>
+                    <th>お問い合わせ番号</th>
+                    <td>G-123456</td>
+                  </tr>
+                      <tr>
+                    <th>GIANTS ID</th>
+                    <td>123456789</td>
+                  </tr>
+                      <tr>
+                    <th>名前</th>
+                    <td>読売 太郎</td>
+                  </tr>
+                      <tr>
+                    <th>名前（フリガナ）</th>
+                    <td>ヨミウリ タロウ</td>
+                  </tr>
+                      <tr>
+                    <th>メールアドレス</th>
+                    <td>giantsshoponline@giants.co.jp</td>
+                  </tr>
+                      <tr>
+                    <th>電話番号</th>
+                    <td>0300000000</td>
+                  </tr>
+                      <tr>
+                    <th>お問い合わせ種別</th>
+                    <td>商品について</td>
+                  </tr>
+                      <tr>
+                    <th>お問い合わせ内容</th>
+                    <td> 登録している住所やメールアドレスなどが変わってしまった。登録している住所やメールアドレスなどが変わってしまった。 </td>
+                  </tr>
+                      <tr>
+                    <th colspan="2"><input class="m-btn-input pcW340" value="送信" type="submit"></th>
+                  </tr>
+                    </tbody>
+              </table>
+                </div>
+          </form>
+            </div>
+      </div>
+          <div class="l-pankz sp">
+        <ul>
+              <li><a href="/">トップ</a></li>
+              <li>お問い合わせ内容</li>
+            </ul>
+      </div>
+        </div>
+  </div>
+    </div>
+<!-- /.l-contents --> 
 
-				<div class="l-inner is_type3">
-					<h3 class="u-ttl3">確認</h3>
-
-					<form action="">
-					<div class="formBox is_conf">
-						<table class="formTbl">
-							<tbody>
-								<tr>
-									<th>お問い合わせ番号</th>
-									<td>G-123456</td>
-								</tr>
-								<tr>
-									<th>GIANTS ID</th>
-									<td>123456789</td>
-								</tr>
-								<tr>
-									<th>名前</th>
-									<td>読売 太郎</td>
-								</tr>
-								<tr>
-									<th>名前（フリガナ）</th>
-									<td>ヨミウリ タロウ</td>
-								</tr>
-								<tr>
-									<th>メールアドレス</th>
-									<td>giantsshoponline@giants.co.jp</td>
-								</tr>
-								<tr>
-									<th>電話番号</th>
-									<td>0300000000</td>
-								</tr>
-								<tr>
-									<th>お問い合わせ種別</th>
-									<td>商品について</td>
-								</tr>
-								<tr>
-									<th>お問い合わせ内容</th>
-									<td>
-										登録している住所やメールアドレスなどが変わってしまった。登録している住所やメールアドレスなどが変わってしまった。
-									</td>
-								</tr>
-								<tr>
-									<th colspan="2"><input class="m-btn-input pcW340" value="送信" type="submit"></th>
-								</tr>
-
-							</tbody>
-						</table>
-					</div>
-					</form>
-				</div>
-			</div>
-
-			<div class="l-pankz sp">
-				<ul>
-					<li><a href="/">トップ</a></li>
-					<li>お問い合わせ内容</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-</div><!-- /.l-contents -->
-
-
-<!--全ページ共通のJS-->
-<script src="/assets/js/jquery.js"></script>
+<!--全ページ共通のJS--> 
+<script src="/assets/js/jquery.js"></script> 
 <script src="/assets/js/main.js"></script> 
-<!--全ページ共通のJS-->
-<!--ページ固有のJS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-<!--ページ固有のJS-->
+<!--全ページ共通のJS--> 
+<!--ページ固有のJS--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
+<!--ページ固有のJS--> 
 
 <!--#include virtual="/assets/include/footer.html" -->
-    
+
 </body>
-
 </html>
-
-
-
-
-
-

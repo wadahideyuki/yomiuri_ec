@@ -27,24 +27,25 @@
     <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
     <link rel="stylesheet" href="/assets/css/common.css">
+    <!--ページ固有のCSS-->
     <link rel="stylesheet" href="/assets/css/detail.css">
+    <!--ページ固有のCSS-->
     </head>
 
     <body>
-    <!--#include virtual="/assets/include/header.html" --> 
-    <!--ページ固有のCSS--> 
-    <!--ページ固有のCSS--> 
-    <span class="hoge"></span>
-    <ul class="l-pankz">
+<header class="l-header"> 
+      <!--#include virtual="/assets/include/header.html" --> 
+    </header>
+<span class="hoge"></span>
+<ul class="l-pankz">
       <li><a href="/">トップ</a></li>
       <li>商品詳細</li>
     </ul>
-    <div class="l-contents" id="pageItemdetail">
+<div class="l-contents" id="pageItemdetail">
       <div class="l-container">
-        <div class="item-detail">
-          <div class="item-photo">
-              <img src="/assets/img/sample/itemdetail.jpg" class="photo" alt=""/> 
-            <!--
+    <div class="item-detail">
+          <div class="item-photo"> <img src="/assets/img/sample/itemdetail.jpg" class="photo" alt=""/> 
+        <!--
                 <div class="swiper-container swiperContainer swiper-item-photo">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></div>
@@ -53,175 +54,172 @@
                     <div class="swiper-slide"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></div>
                   </div>
                 </div>--> 
-            
-          </div>
+        
+      </div>
           <div class="item-info">
-            <ul class="item-icons">
-              <li class="item-icon-new"><span>NEW</span></li>
-              <li class="item-icon-member"><span>会員限定</span></li>
-              <li class="item-icon-sale"><span>セール</span></li>
-            </ul>
-            <h1 class="item-name">GIANTS オーセンティックオーセンティックオーセンティックホームシャツ 2018年...</h1>
-            <p class="item-code">商品コード：1234567890〜0987654321</p>
-            <dl class="point-box">
-              <dt>所持ポイント</dt>
-              <dd>60pt</dd>
-            </dl>
-            <div class="point-labels">
-              <dl class="point-yuryo">
-                <dt>有料会員の方</dt>
-                <dd>50pt</dd>
-              </dl>
-              <dl class="point-member">
-                <dt>メンバーの方</dt>
-                <dd>100pt</dd>
-              </dl>
-            </div>
-            <div class="pc">
-              
-              <ul class="item-thumbs">
-              <li class="selected"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
-              <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
-              
-              </ul>
-              </div>
-              
-            <p class="item-price"><span class="price">¥10,000<em>税込</em></span><span class="off"><strong>¥12,000</strong>税込</span>（お値引き額¥2,000）</p>
+        <div class="item-info-inner">
+              <ul class="item-icons">
+            <li class="item-icon-new"><span>NEW</span></li>
+            <li class="item-icon-member"><span>会員限定</span></li>
+            <li class="item-icon-sale"><span>セール</span></li>
+          </ul>
+              <h1 class="item-name">GIANTS オーセンティックオーセンティックオーセンティックホームシャツ 2018年...</h1>
+              <p class="item-code">商品コード：1234567890〜0987654321</p>
+              <dl class="point-box">
+            <dt>所持ポイント</dt>
+            <dd>60pt</dd>
+          </dl>
+              <div class="point-labels">
+            <dl class="point-yuryo">
+                  <dt>有料会員の方</dt>
+                  <dd>50pt</dd>
+                </dl>
+            <dl class="point-member">
+                  <dt>メンバーの方</dt>
+                  <dd>100pt</dd>
+                </dl>
           </div>
+              <p class="item-price"><span class="price">¥10,000<em>税込</em></span><span class="off"><strong>¥12,000</strong>税込</span>（お値引き額¥2,000）</p>
+            </div>
+        <div class="pc">
+              <ul class="item-thumbs">
+            <li class="selected"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
+            <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
+          </ul>
+            </div>
+      </div>
         </div>
-        <div class="item-name-input">
+    <div class="item-name-input">
           <dl>
-            <dt>ネーム入力</dt>
-            <dd>
+        <dt>ネーム入力</dt>
+        <dd>
               <input type="text" placeholder="例：123456789" class="pcW340">
             </dd>
-          </dl>
+      </dl>
         </div>
-        <div class="item-size-select">
+    <div class="item-size-select">
           <dl>
-            <dt>#2 陽 岱鋼</dt>
-            <dd>
+        <dt>#2 陽 岱鋼</dt>
+        <dd>
               <ul class="size-select">
-                <li>
+            <li>
                   <label>SM
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li>
+            <li>
                   <label>MD
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li>
+            <li>
                   <label>LG
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li class="soldout">
+            <li class="soldout">
                   <label>XL
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li>
+            <li>
                   <label>XX
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li>
+            <li>
                   <label>3X
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                   <span class="nokori">残りわずか</span> </li>
-              </ul>
+          </ul>
               <ul class="num-select">
-                <li class="select-box">
+            <li class="select-box">
                   <select>
-                    <option>1</option>
-                  </select>
+                <option>1</option>
+              </select>
                 </li>
-                <li class="insert-cart">
+            <li class="insert-cart">
                   <div class="btn-cart"> <span>カートに入れる</span>
-                    <input type="button">
-                  </div>
+                <input type="button">
+              </div>
                 </li>
-                <li> <a href="#" class="fav-btn"></a> </li>
-              </ul>
+            <li> <a href="#" class="fav-btn"></a> </li>
+          </ul>
             </dd>
-          </dl>
+      </dl>
           <dl>
-            <dt>#6 坂本 勇人</dt>
-            <dd>
+        <dt>#6 坂本 勇人</dt>
+        <dd>
               <ul class="size-select">
-                <li class="soldout">
+            <li class="soldout">
                   <label>SM
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li class="soldout">
+            <li class="soldout">
                   <label>MD
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li class="soldout">
+            <li class="soldout">
                   <label>LG
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li class="soldout">
+            <li class="soldout">
                   <label>XL
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li class="soldout">
+            <li class="soldout">
                   <label>XX
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                 </li>
-                <li class="soldout">
+            <li class="soldout">
                   <label>3X
-                    <input type="checkbox" value="SM">
-                  </label>
+                <input type="checkbox" value="SM">
+              </label>
                   <span class="nokori">残りわずか</span> </li>
-              </ul>
+          </ul>
             </dd>
-          </dl>
+      </dl>
         </div>
-        <div class="item-detail">
+    <div class="item-detail">
           <h2 class="m-title-item">商品詳細</h2>
           <div class="item-detail-inner">
-            <p>生地「アーマーベント」<br>
+        <p>生地「アーマーベント」<br>
               素材と構造にこだわったメッシュ生地。ポリエステル系複合繊維を使用し、生地を織ると同時に通気口が形成される「エンジニアードメッシュ構造」を採用。　高い疎水性、軽量性、伸長性を持つポリエステル系複合繊維と、肌あたりが良く、生地へのダメージが少ないエンジニアードメッシュ構造の組み合わせで、速乾性、伸長性、通気性、軽量性、耐久性と、ストレスのない着心地を兼ね備えた革新的なメッシュ生地。</p>
-            <p>テクノロジー「UAクールスイッチ」<br>
+        <p>テクノロジー「UAクールスイッチ」<br>
               熱を素早く逃し、涼しさをもたらす特殊プリント。「クリスタルパターン」のUAクールスイッチを生地に施すことにより、酷暑時の運動による体温の上がりすぎを抑え、アスリートのより良いパフォーマンスの維持を可能にするアンダーアーマー独自のテクノロジー。</p>
-          </div>
+      </div>
         </div>
-        <ul class="item-link">
+    <ul class="item-link">
           <li><a href="#">送料について</a></li>
           <li><a href="#">商品のサイズについて</a></li>
           <li><a href="#">初めての方へ</a></li>
         </ul>
-      </div>
+  </div>
     </div>
-    <!-- /.contents --> 
+<!-- /.contents --> 
+<!--全ページ共通のJS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/main.js"></script>
+<!--全ページ共通のJS-->
+<!--ページ固有のJS--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
+<script src="/assets/js/item.js"></script> 
+<!--ページ固有のJS--> 
 
-    <!--全ページ共通のJS--> 
-    <script src="/assets/js/jquery.js"></script> 
-    <script src="/assets/js/lineup.js"></script> 
-    <script src="/assets/js/main.js"></script> 
-    <!--全ページ共通のJS--> 
-    <!--ページ固有のJS--> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
-    <script src="/assets/js/item.js"></script> 
-    <!--ページ固有のJS--> 
+<!--#include virtual="/assets/include/footer.html" -->
 
-    <!--#include virtual="/assets/include/footer.html" -->
-
-    </body>
+</body>
 </html>

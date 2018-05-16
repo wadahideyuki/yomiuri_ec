@@ -11,15 +11,22 @@
         }
         display: flex;
         justify-content: space-between;
+        align-items: top;
         width: 100%;
         .item-photo{
             width: 100%;
             max-width: 400px;
-            border: 1px solid #b3b3b3;
+            img{
+                border: 1px solid #b3b3b3;
+            }
         }
         .item-info{
             max-width: 570px;
             width: 100%;
+            &-inner{
+                background: #FFF;
+                padding: 16px 32px;
+            }
         }
         .item-icons{
             li{
@@ -62,7 +69,26 @@
          }
         .item-name{
             font-size: 20px;
-            @include vw(32)
+            @include vw(32);
+            margin-top: 10px;
+        }
+        .item-code{
+            color: #808080;
+            @include vw(24);
+            margin: 8px 0;
+        }
+        .item-thumbs{
+            margin-top: 12px;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: -2%;
+            flex-wrap: wrap;
+            li{
+                width: 18%;
+               margin-left: 2%;
+                margin-bottom: 12px;
+                border: 1px solid #CCC;
+            }
         }
     }
 }
