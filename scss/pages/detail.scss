@@ -2,7 +2,6 @@
 @import "../lib/_properties";
 @import "../lib/_mixin";
 
-
 /*pages*/
 #pageItemdetail{
   .l-container{
@@ -628,5 +627,133 @@
       border-radius: 5px;
     }
   }
+  
 }
+
+.confirm-modal{
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.confirm-modal-inner{
+  background: #FFF;
+  height: 375px;
+  width: 375px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 15px;
+  @include sp{
+    height: auto;
+    width: 100%;
+    padding: 4%;
+  }
+  img{
+  max-width: 100%;
+  }
+  h3{
+     font-size: 16px;
+     margin-bottom: 15px; 
+    @include vw(32);
+  }
+  .cart-items{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .photo{
+      width: 105px;
+      @include sp{
+          width: 30%;
+      }
+  }
+  .info{
+    width: 65%;
+    margin-left: 4%;
+    @include sp{
+    } 
+    p{
+        font-size: 14px;
+       @include vw(28);
+    }
+    .item-info{
+      li{
+        margin-top: 5px;
+      }
+      span{
+          color: #646464;
+          font-weight: normal;
+      }
+      &.item-info-s{
+          font-size: 10px;
+          @include vw(22);
+      }
+      &.item-info-m{
+          @include vw(24);
+      }
+      &.item-info-l{
+        font-size: 14px;
+        @include vw(28);
+        font-weight: bold;
+      }
+    }
+  }
+  .total-price{
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-weight: bold;
+      em{
+        font-size: 8px;
+        font-style: normal; 
+        font-weight: normal;
+      }
+    }
+    .modal-btns{
+      li{
+        font-weight: bold;
+        margin-top:24px; 
+      }
+    }
+  .close-btn{
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 0px;
+    top: -28px;
+    cursor: pointer;
+    &:before{
+      content: "";
+      display: block;
+      height: 22px;
+      width: 1px;
+      background: #FFF;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    &:after{
+      content: "";
+      display: block;
+      height: 22px;
+      width: 1px;
+      
+      background: #FFF;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  }
+}
+
 

@@ -25,6 +25,11 @@ $(document).ready(function() {
     $(".size-select input:checked").parent().addClass("checked");
   });
   
+  //カート確認のモーダル
+  $(".modal-close").click(function(){
+    $(".confirm-modal").fadeOut("fast");
+  });
+  
 });
 
 
