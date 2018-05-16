@@ -207,15 +207,244 @@
 												<tr>
 													<th colspan="2"><button type="submit" class="u-btn withArwR size2 color2 spFz24 pcW340">編集不可の会員情報を変更する</button></th>
 												</tr>
+												<tr>
+													<th colspan="2" class="fzType2"><div class="chk"><input type="checkbox" name="" value="" id="chkKaiinSet"><label for="chkKaiinSet"><div></div><span>上記内容で会員情報を設定する</span></label></div></th>
+												</tr>
 
 											</tbody>
 										</table>
 									</div>
 									</form>
 							</div>
+
+
+							<div class="cart-inner">
+								<h3 class="m-title-input">メールマガジン</h3>
+								<form action="">
+									<div class="formBox">
+										<table class="formTbl">
+											<tbody>
+												<tr>
+													<th class="fzType2 spMT0"><div class="chk"><input type="checkbox" name="" value="" id="chkMailMag"><label for="chkMailMag"><div></div><span>メールマガジンを希望する</span></label></div></th>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</form>
+							</div>
+
+
+						<div class="cart-inner">
+								<h3 class="m-title-input">配送先住所</h3>
+								
+								<form action="">
+									<div class="receiveAdrs">
+										<ul>
+											<li>
+												<div class="pd">
+													<div class="radio"><input type="radio" name="receiveAdrs" value="receiveAdrs1" id="receiveAdrs1"><label for="receiveAdrs1"><span>申込情報と同じ宛先に発送する</span></label></div>
+												</div>
+											</li>
+
+											<li>
+												<div class="pd">
+													<div class="radio"><input type="radio" name="receiveAdrs" value="receiveAdrs2" id="receiveAdrs2"><label for="receiveAdrs2"><span>
+													山田太郎
+													<small>141-0032<br>東京都品川区大崎2-9-3 大崎ウエストシティビル 7F</small>
+													</span></label></div>
+													ここに削除btnを追加
+												</div>
+											</li>
+
+											<li>
+												<div class="pd">
+													<div class="radio"><input type="radio" name="receiveAdrs" value="receiveAdrs3" id="receiveAdrs3"><label for="receiveAdrs3"><span>読売タロウ
+													<small>141-0032<br>東京都品川区大崎2-9-3 大崎ウエストシティビル 7F</small>
+													</span></label></div>
+												</div>
+											</li>
+
+											<li class="newAdrs">
+												<div class="pd">
+													<div class="radio"><input type="radio" name="receiveAdrs" value="receiveAdrs4" id="receiveAdrs4"><label for="receiveAdrs4"><span>新規に入力する</span></label></div>
+												</div>
+												<div class="formBox">
+													<table class="formTbl">
+														<tbody>
+															<tr>
+																<th class="spMT0"><em class="required">必須</em>名前</th>
+																<td>
+																	<table class="layer2">
+																		<tr>
+																			<th>姓</th>
+																			<td>
+																				<input type="text" placeholder="例：読売" class="pcW220">
+																			</td>
+																		</tr>
+																		<tr>
+																			<th>名</th>
+																			<td><input type="text" placeholder="例：太郎" class="pcW220"></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<th><em class="required">必須</em>名前（フリガナ）</th>
+																<td>
+																	<table class="layer2">
+																		<tr>
+																			<th>セイ</th>
+																			<td><input type="text" placeholder="例：ヨミウリ" class="pcW220"></td>
+																		</tr>
+																		<tr>
+																			<th>メイ</th>
+																			<td><input type="text" placeholder="例：タロウ" class="pcW220"></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+
+													<table class="formTbl is_type2">
+														<tbody>
+															<tr>
+																<th>住所</th>
+																<td>
+																	<table class="formTbl">
+																		<tbody>
+																			<tr>
+																				<th class="fzType2"><em class="required">必須</em>郵便番号</th>
+																				<td>
+																					<dl class="colInForm address">
+																						<dt>
+																							<ul>
+																								<li><input type="number" placeholder="例：112" class="pcW80"></li>
+																								<li class="hyphen">-</li>
+																								<li><input type="number" placeholder="例：0004" class="pcW80"></li>
+																							</ul>
+																						</dt>
+																						<dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
+																					</dl>
+																				</td>
+																			</tr>
+																			<tr>
+																				<th class="fzType2"><em class="required">必須</em>都道府県</th>
+																				<td>
+																					<div class="select-box pcW180">
+																						<select name="select" id="select2">
+																							<option value="">選択してください</option>
+																							<option value="1">北海道</option>
+																						</select>
+																					</div>
+																				</td>
+																			</tr>
+																			<tr>
+																				<th class="fzType2"><em class="required">必須</em>それ以降の住所</th>
+																				<td><input type="tel" placeholder="例：東京都文京区後楽１丁目３−６１" class="pcW"></td>
+																			</tr>
+																			<tr>
+																				<th class="fzType2"><em class="required">必須</em>電話番号</th>
+																				<td>
+																					<dl class="colInForm tel">
+																						<dt>
+																							<ul>
+																								<li><input type="tel" placeholder="例：03" class="pcW"></li>
+																								<li class="hyphen">-</li>
+																								<li><input type="tel" placeholder="例：0000" class="pcW"></li>
+																								<li class="hyphen">-</li>
+																								<li><input type="tel" placeholder="例：0000" class="pcW"></li>
+																							</ul>
+																						</dt>
+																					</dl>
+																				</td>
+																			</tr>
+																			<tr>
+																				<th class="fzType2"><div class="chk"><input type="checkbox" name="" value="" id="chkAdAdrs"><label for="chkAdAdrs"><div></div><span>入力した住所を追加する</span></label></div></th>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+
+												</div>
+											</li>
+										</ul>
+												
+									</div>
+									</form>
+							</div>
+
+
+							<div class="cart-inner">
+								<h3 class="m-title-input">ギフトボックス・メッセージ</h3>
+								<form action="">
+									<div class="formBox">
+										<table class="formTbl">
+											<tbody>
+												<tr>
+													<th class="fzType2 spMT0"><div class="chk"><input type="checkbox" name="" value="" id="chkGift"><label for="chkGift"><div></div><span>ギフトを希望する</span></label></div></th>
+												</tr>
+												<tr>
+													<th class="fzType2"><em class="required">必須</em>ギフトボックス選択</th>
+													<td>
+														<div class="select-box pcW180">
+															<select name="select" id="select3">
+																<option value="">選択してください</option>
+																<option value="1">ギフト1</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="fzType2">ギフトメッセージ入力</th>
+													<td><textarea name="" id="" class=""></textarea></td>
+												</tr>
+												<tr>
+													<th colspan="2" class="note1 spMT3P">※まとめて1つのギフトボックスで配送されます。</th>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</form>
+							</div>
+
+
+							<div class="cart-inner">
+								<h3 class="m-title-input">配送</h3>
+								<form action="">
+									<div class="formBox">
+										<table class="formTbl">
+											<tbody>
+												<tr>
+													<th class="fzType2">配送希望日</th>
+													<td>
+														<div class="select-box pcW180">
+															<select name="select" id="select4">
+																<option value="">選択してください</option>
+																<option value="1">ギフト1</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th colspan="2" class="note2 spMT3P">※ 配送希望日が未選択の場合、最短での配送可能日でのお届けとなります。</th>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="btn-box"><button class="m-btn-input" href="#">支払い情報入力に進む</button></div>
+								</form>
+							</div>
+
 						</div>
-ここから
-						<div class="btn-box"> <a class="m-btn-type-1" href="#">買い物を続ける</a> </div>
+
+
+
 
 						<div class="l-pankz sp">
 							<ul>

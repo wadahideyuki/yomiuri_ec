@@ -424,4 +424,52 @@ $img_path: "/assets/img/";
 			background:url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
 		}
 	}
+	.receiveAdrs{
+		border: 1px solid #666;
+		border-radius: 5px;
+		> ul{
+			> li{
+				.pd{
+					padding: vw(20) vw(15);
+				}
+				.radio{
+					label{
+						span{
+							@include vw(28);
+							small{
+								display: block;
+								color: #646464;
+								@include vw(20);
+							}
+						}
+					}
+				}
+				& + li{
+					border-top: 1px solid #666;
+				}
+				.formBox{
+					background-color: #f2f2f2;
+					padding: vw(30) vw(40);
+					.formTbl{
+						.layer2{
+							tr{
+								> th{
+									width: 12%;
+								}
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+	.note1{
+		color: #646464;
+		@include vw(24);
+	}
+	.note2{
+		color: #4d4d4d;
+		@include vw(18);
+	}
 }
