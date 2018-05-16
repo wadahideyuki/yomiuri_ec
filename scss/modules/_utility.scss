@@ -760,8 +760,8 @@
         right: 7px;
         top: 8px;
         @include sp{
-            right: 7px;
-            top: 8px;
+            right: 8%;
+            top: 26%;
         }
     }
     &:after{
@@ -776,8 +776,8 @@
         right: 12px;
         top: 12px;
         @include sp{
-            right: 12px;
-            top: 12px;
+            right: 14.5%;
+            top: 36%;
         }
     }
     

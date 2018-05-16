@@ -1,31 +1,30 @@
-//swiper
-var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-if(windowWidth > 750) {
-    //PC時のみの　ほしいものリスト
-    var swiperChecked = new Swiper('.swiper-container.swiper-item-photo', {
-        slidesPerView: 1,
-        loop: true,
-        autoHeight: true,
-        navigation: {
-            nextEl: '.favolite__next',
-            prevEl: '.favolite__prev',
-        }
-    });
-} else {
-    //SPのswiper共通
-    var allSwiper = new Swiper('.swiperContainer.swiper-item-photo', {
-        slidesPerView: 3,
-        spaceBetween: 1,
-        loop: true,
-        pagination: {
-            el: '.favolite-pagination',
-            type: 'bullets',
-        }
-        /*navigation: {
-            nextEl: '.swiper-favolite .m-swiper-control__next',
-            prevEl: '.swiper-favolite .m-swiper-control__prev',
-        }*/
-    });
-}
+$(function() {
+	$('.slick-box').slick({
+		infinite: true,
+    dots: true
+	}); 
+});
+$(document).ready(function() {
+  //サムネイル差し替え
+  $(".item-thumbs li").click(function(){
+    $(".item-thumbs li").removeClass();
+    $(this).addClass("selected");
+    var imgSrc = $("img",this).attr("src");
+    $(".item-photo img").attr("src",imgSrc);
+  });
+  
+  //SP商品詳細
+  $(".item-detail h2").click(function(){
+    $(this).toggleClass("open");
+    $(this).next().toggleClass("sp-show");
+  });
+  
+  //サイズのradio切り替え
+  $(".size-select input").change(function(){
+    $(".size-select .checkBox").removeClass("checked");
+    $(".size-select input:checked").parent().addClass("checked");
+  });
+  
+});
 
 

@@ -143,4 +143,55 @@
             @include fs(16)
         }
     }
+  &-btn-cart{
+    background: $color-key;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &.noitem{
+      background: #c9c9c9;
+      span{
+        &:before{
+          display: none;
+        }
+      }
+    }
+    span{
+      color: #FFF;
+      display: block;
+      width: 210px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 48px;
+      @include vw(32);
+      @include sp{
+        width: 100%;
+        line-height: 11vw;
+      }
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        background-image: url(/assets/img/icon/cart.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+        @include sp{
+          width: 6vw;
+          height: 6vw;
+        }
+      }
+    }
+    input{
+      display:block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  }
 }
