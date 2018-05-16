@@ -720,6 +720,9 @@
       li{
         font-weight: bold;
         margin-top:24px; 
+        @include sp{
+          margin-top: 5%;
+        }
       }
     }
   .close-btn{

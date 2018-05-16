@@ -672,6 +672,9 @@ fade
   .confirm-modal-inner .modal-btns li {
     font-weight: bold;
     margin-top: 24px; }
+    @media print, screen and (max-width: 750px) {
+      .confirm-modal-inner .modal-btns li {
+        margin-top: 5%; } }
   .confirm-modal-inner .close-btn {
     display: block;
     width: 22px;
