@@ -151,15 +151,17 @@ if (windowWidth <= 750) {
 
 
 
-//カテゴリーページなどにあるソート
+/*----- アコーディオン -----*/
 $(function(){
-	$(".u-cateCondition .btnSort a").click(function(){
+	//data属性にてbtnとboxを繋ぐ
+	$(".btnAcrd1").click(function(){
 		$(this).toggleClass("show");
-		var thisSort = $(this).parents($(".u-cateCondition"));
-		thisSort.find(".sortList1").slideToggle();
+		var thisAcrd = $(this).attr("data-acrdNo");
+		$(`[data-acrdBoxNo=${thisAcrd}]`).slideToggle();
 		return false;
 	});
 });
+/*----- /アコーディオン -----*/
 
 
 
