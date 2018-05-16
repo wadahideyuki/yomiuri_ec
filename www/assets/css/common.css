@@ -339,7 +339,8 @@ input[type=checkbox] {
 }
 
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+button {
   -webkit-appearance: none;
   cursor: pointer;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
@@ -741,12 +742,14 @@ blockquote:before {
   }
 }
 
-.m-btn a {
+.m-btn a,
+.m-btn button {
   display: block;
   position: relative;
   padding: 8px 40px;
 }
-.m-btn a:after {
+.m-btn a:after,
+.m-btn button:after {
   content: url(/assets/img/icon/arrow_btn_gray.png);
   position: absolute;
   right: 10px;
@@ -755,14 +758,21 @@ blockquote:before {
   transition: all .15s;
 }
 @media print, screen and (max-width: 750px) {
-  .m-btn a:after {
+  .m-btn a:after,
+  .m-btn button:after {
     right: 6px;
   }
 }
 @media print, screen and (min-width: 751px) {
-  .m-btn a:hover:after {
+  .m-btn a:hover:after,
+  .m-btn button:hover:after {
     right: 6px;
   }
+}
+.m-btn button {
+  background: none;
+  width: 100%;
+  border: none;
 }
 .m-btn--ex {
   display: block;
@@ -1438,6 +1448,20 @@ blockquote:before {
   transform: rotate(-45deg);
   top: 0.6666666667vw;
   bottom: 0;
+}
+.u-btnAdrsAuto {
+  display: block;
+  background-color: #fff;
+  color: #f49c00;
+  border: 2px solid #f49c00;
+  padding: 1.3333333333vw 2.6666666667vw;
+  border-radius: 1.0666666667vw;
+}
+@media print, screen and (min-width: 751px) {
+  .u-btnAdrsAuto {
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
 }
 .u-icn:before {
   content: "";
@@ -2147,6 +2171,14 @@ textarea {
 .formBox .formTbl .layer2 tr + tr > td {
   padding-top: 5%;
 }
+.formBox .formTbl .address ul {
+  display: flex;
+  align-items: center;
+}
+.formBox .formTbl .address dd {
+  width: 60%;
+  margin-top: 3%;
+}
 .formBox.is_conf .formTbl > tbody > tr > th {
   margin-top: 8%;
 }
@@ -2234,6 +2266,14 @@ textarea {
   }
 }
 @media print, screen and (min-width: 751px) {
+  .pcW80 {
+    width: 80px !important;
+  }
+
+  .pcW180 {
+    width: 180px !important;
+  }
+
   .pcW220 {
     width: 220px !important;
   }

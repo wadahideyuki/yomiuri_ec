@@ -13,7 +13,8 @@
             @include vw(24);
             border-radius: 6px;
         }
-        a {
+        a ,
+        button {
             display: block;
             position: relative;
             padding: 8px 40px;
@@ -36,6 +37,11 @@
                 }
             }
         }
+        button {
+					background: none;
+					width: 100%;
+					border: none;
+				}
         &--ex {
             display: block;
             width: 160px;
