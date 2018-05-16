@@ -1890,7 +1890,8 @@ textarea {
     padding: 7px 0 20px; }
     @media print, screen and (max-width: 750px) {
       .l-header__mainArea {
-        padding: 2.6666666667%; } }
+        padding: 2.6666666667%;
+        border-bottom: 1px solid #b3b3b3; } }
   .l-header__contactLine {
     width: 1000px;
     margin: 0 auto 6px;
