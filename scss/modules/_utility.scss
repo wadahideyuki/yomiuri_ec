@@ -75,6 +75,15 @@
 			padding: 10px 10px;
 			border-radius: 5px;
 		}
+		&.size2{
+			padding: vw(25) vw(20);
+			@include pc{
+				padding: 10px;
+			}
+		}
+		&.color2{
+			border-color: #c3c3c3;
+		}
 		&.with{
 			&Arw{
 				&T{
@@ -133,6 +142,40 @@
 						}
 					}
 				}
+				&R{
+					padding-right: vw(40);
+					position: relative;
+					&:before{
+						content: "";
+						width: vw(10);
+						height: vw(10);
+						margin: auto;
+						border-style: solid;
+						border-width: vw(1) vw(1) 0 0;
+						border-color: #4d4d4d #4d4d4d transparent transparent;
+						transform: rotate(45deg);
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: vw(15);
+					}
+					@include pc{
+						padding-right: 35px;
+						&:before{
+							width: 8px;
+							height: 8px;
+							border-width: 1px 1px 0 0;
+							top: 0px;
+							right: 10px;
+							transition: all .15s;
+						}
+						&:hover{
+							&:before{
+								right: 6px;
+							}
+						}
+					}
+				}
 			}
 		}
 		&.btnAcrd1{
@@ -158,6 +201,18 @@
 					top: vw(5);
 					bottom: 0;
 				}
+			}
+		}
+		&AdrsAuto{
+			display: block;
+			background-color: #fff;
+			color: $color_key;
+			border: 2px solid $color_key;
+			padding: vw(10) vw(20);
+			border-radius: vw(8);
+			@include pc{
+				padding: 10px 10px;
+				border-radius: 5px;
 			}
 		}
 	}
@@ -824,7 +879,7 @@ textarea{
 
 .formBox{
 	padding-bottom: 10%;
-	input, textarea{
+	input, textarea, button{
 		width: 100%;
 	}
 	select{
@@ -852,6 +907,10 @@ textarea{
 					margin-top: 10%;
 					@include vw(32);
 					text-align: left;
+					&.fzType2{
+						@include vw(28);
+						font-weight: normal;
+					}
 					&.mtHf{
 						margin-top: 3%;
 					}
@@ -860,6 +919,21 @@ textarea{
 					display: block;
 					margin-top: 3%;
 					@include vw(26);
+				}
+			}
+		}
+		&.is_type2{
+			.formTbl{
+				> tbody{
+					> tr{
+						> th{
+						}
+						&:first-child{
+							> th{
+								margin-top: 0;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -879,6 +953,35 @@ textarea{
 					> td{
 						padding-top: 5%;
 					}
+				}
+			}
+		}
+		.colInForm{
+			ul{
+				display: flex;
+				align-items: center;
+			}
+			li{
+				&.hyphen{
+					width: 5% !important;
+					@include vw(36);
+					text-align: center;
+				}
+			}
+			dd{
+				margin-top: 3%;
+			}
+			&.address{
+				li{
+					width: 35%;
+				}
+				dd{
+					width: 60%;
+				}
+			}
+			&.tel{
+				li{
+					width: 28%;
 				}
 			}
 		}
@@ -988,9 +1091,13 @@ textarea{
 //SP
 @include sp{
 	.spBgWhite{background-color: #fff;}
+	.spW100P{width: 100% !important;}
+	.spFz24{@include vw(24);}
 }
 //PC
 @include pc{
+	.pcW80{width: 80px !important;}
+	.pcW180{width: 180px !important;}
 	.pcW220{width: 220px !important;}
 	.pcW296{width: 296px !important;}
 	.pcW340{width: 340px !important;}
