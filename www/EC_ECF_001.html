@@ -36,7 +36,47 @@
 <body>
 
 <header class="l-header">
-<!--#include virtual="/assets/include/header.html" -->
+    <div class="l-header__block pc">
+    <!--#include virtual="/assets/include/header_pc.html" -->
+    </div>
+    <div class="l-header__block sp">
+    <!--#include virtual="/assets/include/header_sp.html" -->
+        
+        <form action="post" id="formHeader--sp" class="l-header__searchForm">
+            <input id="inputHeader--sp" type="text" placeholder="選手名や商品名を入力してください">
+            <input id="submitHeader--sp" type="submit" value="　検索">
+        </form>
+        <div class="l-header__pickupArea">
+            <p class="l-header__focusTtl">
+                <span>注目ワード</span>
+            </p>
+            <ul class="l-header__focusList">
+                <li class="l-header__focusTag">坂本</li>
+                <li class="l-header__focusTag">アンダーアーマー</li>
+                <li class="l-header__focusTag">優勝記念</li>
+            </ul>
+            <p class="l-header__focusMore more">
+                <a href="">
+<!--                    <img src="/assets/img/top/more.png" alt="more">-->
+                </a>
+            </p>
+        </div>
+        <div class="l-header__focusPlus plus">
+          <ul class="l-header__focusList">
+              <li class="l-header__focusTag">坂本</li>
+              <li class="l-header__focusTag">アンダーアーマー</li>
+              <li class="l-header__focusTag">優勝記念</li>
+              <li class="l-header__focusTag">坂本</li>
+              <li class="l-header__focusTag">アンダーアーマー</li>
+              <li class="l-header__focusTag">優勝記念</li>
+              <li class="l-header__focusTag">坂本</li>
+              <li class="l-header__focusTag">アンダーアーマー</li>
+              <li class="l-header__focusTag">優勝記念</li>
+              <li class="l-header__focusTag">坂本</li>
+          </ul>
+        </div>
+    </div>
+    
     <div class="l-header__headlineArea">
       <div class="l-header__headlineInner">
            <p class="l-header__headlineTag">NEWS</p>
