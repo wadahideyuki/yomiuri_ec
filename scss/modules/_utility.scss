@@ -674,10 +674,8 @@
       color: inherit;
       box-sizing: content-box;
         line-height: 2;
-        @include fs(14);
-        @include sp{
-           @include vw(22); 
-        }
+        font-size: 11px;
+        @include vw(22); 
     }
     &:before{
         content: "";
@@ -689,7 +687,7 @@
         background: $color_key;
         border-radius: 50px;
         right: 7px;
-        top: 10px;
+        top: 8px;
         @include sp{
             right: 7px;
             top: 8px;
@@ -705,7 +703,7 @@
         transform: rotate(135deg);
         display: block;
         right: 12px;
-        top: 14px;
+        top: 12px;
         @include sp{
             right: 12px;
             top: 12px;

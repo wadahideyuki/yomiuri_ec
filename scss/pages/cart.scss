@@ -44,7 +44,6 @@ $img_path: "/assets/img/";
         background: #FFF;
         font-weight: normal;
         border-radius: 5px;
-        @include fs(16);
         @include sp{
             margin: 4% 4%  6% 4%; 
             @include vw(24);
@@ -61,9 +60,11 @@ $img_path: "/assets/img/";
                 @include fs(10);
             }
             strong{
+                font-size: 16px;
+                font-weight: normal;
                 @include vw(32);
-                @include pc{
-                    @include fs(16);
+                &.total-price{
+                    font-weight: bold;
                 }
                 em{
                     font-size: 70%;
@@ -73,10 +74,8 @@ $img_path: "/assets/img/";
         }
         .price-code-off{
             display: block;
+            font-size: 9px;
             @include vw(16);
-            @include pc{
-                @include fs(11);
-            }
             text-align: right;
             color: #646464;
             width: 100%;
@@ -84,12 +83,14 @@ $img_path: "/assets/img/";
         p{
         }
         @include pc{
-            @include fs(14)
+            font-size: 12px;
         }
     }
     .cart-inner{
         margin: 16px 0px 32px 0px;
+        font-size: 12px;
         @include sp{
+            @include vw(24);
             margin: 4% 4%  6% 4%; 
         }
         .font-red{
@@ -138,6 +139,10 @@ $img_path: "/assets/img/";
                     margin-left: 3%;
                     @include sp{
                         width: 67%;
+                    } 
+                    p{
+                        font-size: 14px;
+                       @include vw(28);
                     }
                     .item-info{
                         span{
@@ -145,16 +150,11 @@ $img_path: "/assets/img/";
                             font-weight: normal;
                         }
                         &.item-info-s{
+                            font-size: 10px;
                             @include vw(22);
-                            @include pc{
-                                @include fs(12);
-                            }
                         }
                         &.item-info-m{
                             @include vw(24);
-                            @include pc{
-                                @include fs(16);
-                            }
                         }
                         &.item-info-l{
                             @include vw(28);
@@ -169,15 +169,8 @@ $img_path: "/assets/img/";
                 .price{
                     width: 17%;
                     margin-left: 4%;
-                    @include sp{
-                        position: absolute;
-                        left: 34%;
-                        width: 100%;
-                        bottom: 0px;
-                        .sp{
-                            display: inline-block;
-                        }
-                    }
+                    text-align: center;
+                    font-size: 14px;
                 }
                 .bts{
                     margin:16px 0 0 0;
@@ -195,9 +188,9 @@ $img_path: "/assets/img/";
                     .m-btn-input2.btn-del{
                         margin-right: 5px;
                         input{
+                            font-size: 11px;
                             @include vw(22);
                             @include pc{
-                                @include fs(14);
                                 padding: 9px 10px 9px 3px;
                             }
                         }
@@ -206,12 +199,10 @@ $img_path: "/assets/img/";
                     .m-btn-input2.btn-fav{
                         a{
                             padding: 5px;
+                            font-size: 9px;
                             @include vw(18);
                             padding: 5px;
                             line-height: 1;
-                            @include pc{
-                                @include fs(11);
-                            }
                         }
                     }
                 }
@@ -219,7 +210,7 @@ $img_path: "/assets/img/";
                     width: 14%;
                     margin-left: 2%;
                     .select-box{
-                        margin: 0 5px 8px 15px;
+                        margin: 0 13px 8px 10px;
                         @include sp{
                             display: inline-block;
                             vertical-align: top;
@@ -264,7 +255,7 @@ $img_path: "/assets/img/";
             }
             @include vw(24);
             @include pc{
-                @include fs(14);
+                font-size: 12px;
             }
             &.ttl-noid{
                 background: #e6e6e6;
@@ -338,7 +329,7 @@ $img_path: "/assets/img/";
             h4{
                 @include vw(28);
                 @include pc{
-                    @include fs(16);
+                    font-size: 14px;
                 }
             }
             p{
@@ -346,7 +337,7 @@ $img_path: "/assets/img/";
                 font-weight: normal;
                 @include vw(20);
                 @include pc{
-                    @include fs(14);
+                    font-size: 12px;
                 }
             }
         }

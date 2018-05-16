@@ -4,7 +4,7 @@ if(windowWidth > 750) {
     //PC時のみの　ほしいものリスト
     var swiperChecked = new Swiper('.swiper-container.swiper-favolite', {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: 16,
         loop: true,
         autoHeight: true,
         navigation: {
@@ -14,7 +14,7 @@ if(windowWidth > 750) {
     });
     var swiperChecked = new Swiper('.swiper-container.swiper-bundleitem', {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: 16,
         loop: true,
         autoHeight: true,
         navigation: {

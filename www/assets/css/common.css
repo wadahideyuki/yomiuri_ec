@@ -720,15 +720,12 @@ blockquote:before {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    border: 0px; }
+    border: 0px;
+    font-size: 11px; }
     @media print, screen and (max-width: 750px) {
       .m-btn-input2 a, .m-btn-input2 input {
         font-size: 16px;
         font-size: 4.2666666667vw; } }
-    @media print, screen and (min-width: 751px) {
-      .m-btn-input2 a, .m-btn-input2 input {
-        font-size: 14px;
-        font-size: 1.0769230769rem; } }
 .m-btn-type-1 {
   border: 1px solid #f49c00;
   display: block;
@@ -787,6 +784,11 @@ blockquote:before {
         transform: translate(0, -50%); } }
   .m-title.noline {
     border: 0px; }
+    @media print, screen and (min-width: 751px) {
+      .m-title.noline strong {
+        font-size: 18px; }
+      .m-title.noline span {
+        font-size: 14px; } }
   .m-title__tag {
     display: inline-block;
     padding: 0 40px;
@@ -862,8 +864,13 @@ blockquote:before {
 .p-title {
   background: #FFF;
   border-bottom: 4px solid #f4f4f4; }
+  @media print, screen and (max-width: 750px) {
+    .p-title {
+      font-size: 16px;
+      font-size: 4.2666666667vw; } }
   @media print, screen and (min-width: 751px) {
     .p-title {
+      font-size: 24px;
       border-bottom: 4px solid #c9c9c9;
       margin-bottom: 10px; } }
   .p-title:after {
@@ -874,30 +881,24 @@ blockquote:before {
     @media print, screen and (min-width: 751px) {
       .p-title:after {
         display: none; } }
-  .p-title h2 {
-    font-size: 32px;
-    font-size: 2.4615384615rem; }
-@media print, screen and (max-width: 750px) and (max-width: 750px) {
-  .p-title h2 {
-    font-size: 16px;
-    font-size: 4.2666666667vw; } }
-
   .p-title .nml20 {
     margin-left: -.5em; }
   .p-title-inner {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px 0; }
+    padding: 24px 0; }
     @media print, screen and (max-width: 750px) {
       .p-title-inner {
         padding: 2%; } }
     .p-title-inner .day-txt {
-      font-weight: bold;
-      font-size: 24px;
-      font-size: 1.8461538462rem; }
+      font-weight: normal;
+      margin-top: 16px;
+      font-size: 80%;
+      display: block;
+      color: #646464; }
       @media print, screen and (max-width: 750px) {
         .p-title-inner .day-txt {
-          color: #646464; } }
+          margin-top: 2%; } }
   @media print, screen and (max-width: 750px) and (max-width: 750px) {
     .p-title-inner .day-txt {
       font-size: 12px;
@@ -1529,13 +1530,11 @@ blockquote:before {
     color: inherit;
     box-sizing: content-box;
     line-height: 2;
-    font-size: 14px;
-    font-size: 1.0769230769rem; }
-@media print, screen and (max-width: 750px) and (max-width: 750px) {
-  .select-box > select {
-    font-size: 11px;
-    font-size: 2.9333333333vw; } }
-
+    font-size: 11px; }
+    @media print, screen and (max-width: 750px) {
+      .select-box > select {
+        font-size: 11px;
+        font-size: 2.9333333333vw; } }
   .select-box:before {
     content: "";
     position: absolute;
@@ -1546,7 +1545,7 @@ blockquote:before {
     background: #f49c00;
     border-radius: 50px;
     right: 7px;
-    top: 10px; }
+    top: 8px; }
     @media print, screen and (max-width: 750px) {
       .select-box:before {
         right: 7px;
@@ -1561,7 +1560,7 @@ blockquote:before {
     transform: rotate(135deg);
     display: block;
     right: 12px;
-    top: 14px; }
+    top: 12px; }
     @media print, screen and (max-width: 750px) {
       .select-box:after {
         right: 12px;

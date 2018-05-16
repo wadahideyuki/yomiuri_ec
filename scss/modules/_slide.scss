@@ -3,11 +3,12 @@ $img_path: "/assets/img/";
 @import "../lib/_mixin";
 
 .m-itemList {
-    margin-bottom: 32px;
+    margin-top: 47px;
+    margin-bottom: 64 + 15px;
     @include sp{
         padding: 3% 0 2% 0;
         background: #EEE;
-        margin-bottom: 0px;
+        margin: 0;
     }
     .m-itemTxt{
         font-weight: normal;

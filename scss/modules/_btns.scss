@@ -114,10 +114,8 @@
             width: 100%;
             box-sizing: border-box;
             border: 0px;
+            font-size: 11px;
             @include vw(32);
-            @include pc{
-                @include fs(14);
-            }
         }
     } 
     &-btn-type-1{
