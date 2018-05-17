@@ -216,6 +216,58 @@
 				border-radius: 5px;
 			}
 		}
+		&PopUp{
+			> a{
+				display: block;
+				padding: vw(20) vw(30);
+				color: #333;
+				@include vw(28);
+				border: 1px solid #999;
+				border-radius: 5px;
+				position: relative;
+				.txt{
+				}
+				.icn{
+					width: vw(27);
+					height: vw(29);
+					margin: auto;
+					border-bottom: vw(2) solid $color_key;
+					border-left: vw(2) solid $color_key;
+					box-sizing: border-box;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: vw(30);
+					p{
+						width: 100%;
+						height: percentage(27/29);
+						border: vw(2) solid $color_key;
+						box-sizing: border-box;
+						position: absolute;
+						bottom: vw(4);
+						left: vw(4);
+						span{
+							width: percentage(14/27);
+							height: percentage(14/27);
+							border-top: vw(2) solid $color_key;
+							border-right: vw(2) solid $color_key;
+							position: absolute;
+							bottom: vw(5);
+							left: vw(4);
+							&:before{
+								content: "";
+								width: 140%;
+								border-top: vw(1) solid $color_key;
+								position: absolute;
+								top: vw(4);
+								right: vw(-3);
+								transform: rotate(-45deg);
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	/* アイコン */
 	&icn{
@@ -831,62 +883,62 @@
 }
 
 .select-box{
-    overflow: hidden;
-    border: solid 1px #c9c9c9;
-    border-radius: 5px;
-    position: relative;
-    background: #fcfcfc;
-    &> select{
-        width: 120%;
-        border: 0px;
-        padding: 6px 6px 6px 10px;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        position: relative;
-        display: inline-block;
-      background: none transparent;
-      vertical-align: middle;
-      font-size: inherit;
-      color: inherit;
-      box-sizing: content-box;
-        line-height: 2;
-        font-size: 11px;
-        @include vw(22); 
-    }
-    &:before{
-        content: "";
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        text-align: center;
-        display: block;
-        background: $color_key;
-        border-radius: 50px;
-        right: 7px;
-        top: 8px;
-        @include sp{
-            right: 8%;
-            top: 26%;
-        }
-    }
-    &:after{
-        content: "";
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        border-top: 2px solid #FFF;
-        border-right: 2px solid #FFF;
-        transform: rotate(135deg);
-        display: block;
-        right: 12px;
-        top: 12px;
-        @include sp{
-            right: 14.5%;
-            top: 36%;
-        }
-    }
-    
+	overflow: hidden;
+	border: solid 1px #c9c9c9;
+	border-radius: 5px;
+	position: relative;
+	background: #fcfcfc;
+	&> select{
+		width: 120%;
+		border: 0px;
+		padding: 6px 6px 6px 10px;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		position: relative;
+		display: inline-block;
+		background: none transparent;
+		vertical-align: middle;
+		font-size: inherit;
+		color: inherit;
+		box-sizing: content-box;
+		line-height: 2;
+		font-size: 11px;
+		@include vw(22); 
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		text-align: center;
+		display: block;
+		background: $color_key;
+		border-radius: 50px;
+		right: 7px;
+		top: 8px;
+		@include sp{
+			right: 8%;
+			top: 26%;
+		}
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		border-top: 2px solid #FFF;
+		border-right: 2px solid #FFF;
+		transform: rotate(135deg);
+		display: block;
+		right: 12px;
+		top: 12px;
+		@include sp{
+			right: 14.5%;
+			top: 36%;
+		}
+	}
+	
 }
 
 

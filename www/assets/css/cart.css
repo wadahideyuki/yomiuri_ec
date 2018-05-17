@@ -326,6 +326,10 @@ fade
     font-size: 2.1333333333vw;
   }
 }
+#pageCart .price-box .price-total.withBDT {
+  padding-top: 12px;
+  border-top: 1px solid #4d4d4d;
+}
 @media print, screen and (min-width: 751px) {
   #pageCart .price-box {
     font-size: 12px;
@@ -704,6 +708,7 @@ fade
 #pageCart .receive-flow-step li {
   width: 25%;
   text-align: center;
+  font-weight: bold;
 }
 #pageCart .receive-flow-step li em {
   display: block;
@@ -744,6 +749,7 @@ fade
 #pageCart .receiveAdrs {
   border: 1px solid #666;
   border-radius: 5px;
+  overflow: hidden;
 }
 #pageCart .receiveAdrs > ul > li .pd {
   padding: 2.6666666667vw 2vw;
@@ -762,6 +768,22 @@ fade
   #pageCart .receiveAdrs > ul > li .radio label span small {
     font-size: 10px;
     font-size: 2.6666666667vw;
+  }
+}
+#pageCart .receiveAdrs > ul > li .btnWrap {
+  margin-top: 3%;
+  text-align: right;
+}
+#pageCart .receiveAdrs > ul > li .btnWrap a {
+  display: inline-block;
+  padding: 2vw 9.3333333333vw;
+  color: #231815;
+  border-color: #c3c3c3;
+}
+@media print, screen and (max-width: 750px) {
+  #pageCart .receiveAdrs > ul > li .btnWrap a {
+    font-size: 10.5px;
+    font-size: 2.8vw;
   }
 }
 #pageCart .receiveAdrs > ul > li + li {

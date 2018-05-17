@@ -82,6 +82,12 @@ $img_path: "/assets/img/";
         }
         p{
         }
+        .price-total{
+					&.withBDT{
+						padding-top: 12px;
+						border-top: 1px solid #4d4d4d;
+					}
+				}
         @include pc{
             font-size: 12px;
         }
@@ -378,6 +384,7 @@ $img_path: "/assets/img/";
 		li{
 			width: 25%;
 			text-align: center;
+			font-weight: bold;
 			em{
 				display: block;
 				margin-bottom: 0.5em;
@@ -427,6 +434,7 @@ $img_path: "/assets/img/";
 	.receiveAdrs{
 		border: 1px solid #666;
 		border-radius: 5px;
+		overflow: hidden;
 		> ul{
 			> li{
 				.pd{
@@ -442,6 +450,17 @@ $img_path: "/assets/img/";
 								@include vw(20);
 							}
 						}
+					}
+				}
+				.btnWrap{
+					margin-top: 3%;
+					text-align: right;
+					a{
+						display: inline-block;
+						padding: vw(15) vw(70);
+						color: #231815;
+						@include vw(21);
+						border-color: #c3c3c3;
 					}
 				}
 				& + li{

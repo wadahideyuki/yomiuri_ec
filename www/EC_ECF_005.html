@@ -62,19 +62,19 @@
 							<div class="receive-flow-step step1 sp">
 								<ul>
 									<li>
-										<em>step1</em>
+										<em>Step1</em>
 										<p><span>配送先情報<br>入力</span></p>
 									</li>
 									<li>
-										<em>step2</em>
+										<em>Step2</em>
 										<p><span>お支払方法<br>選択</span></p>
 									</li>
 									<li>
-										<em>step3</em>
+										<em>Step3</em>
 										<p><span>ご注文最終<br>確認</span></p>
 									</li>
 									<li>
-										<em>step4</em>
+										<em>Step4</em>
 										<p><span>購入完了</span></p>
 									</li>
 								</ul>
@@ -84,8 +84,7 @@
 								<ul>
 									<li><span>割引前の商品代金(税込)</span><span>¥7,418</span></li>
 									<li class="price-off"><span>優勝記念1000円割引</span><span>- ¥1,000</span></li>
-									<li><a href="#" class="price-code-off">× プロモーションコードの使用を取りやめる</a></li>
-									<li class="price-total"><span><strong>商品代金<em>(税込)</em></strong>※送料は含みません</span><span><strong>¥6,418</strong></span></li>
+									<li class="price-total withBDT"><span><strong>商品代金<em>(税込)</em></strong>※送料は含みません</span><span><strong>¥6,418</strong></span></li>
 								</ul>
 							</div>
 
@@ -252,7 +251,7 @@
 													山田太郎
 													<small>141-0032<br>東京都品川区大崎2-9-3 大崎ウエストシティビル 7F</small>
 													</span></label></div>
-													ここに削除btnを追加
+													<div class="btnWrap"><a class="u-btn" href="#">削除</a></div>
 												</div>
 											</li>
 
@@ -261,6 +260,7 @@
 													<div class="radio"><input type="radio" name="receiveAdrs" value="receiveAdrs3" id="receiveAdrs3"><label for="receiveAdrs3"><span>読売タロウ
 													<small>141-0032<br>東京都品川区大崎2-9-3 大崎ウエストシティビル 7F</small>
 													</span></label></div>
+													<div class="btnWrap"><a class="u-btn" href="#">削除</a></div>
 												</div>
 											</li>
 
@@ -390,7 +390,7 @@
 													<th class="fzType2 spMT0"><div class="chk"><input type="checkbox" name="" value="" id="chkGift"><label for="chkGift"><div></div><span>ギフトを希望する</span></label></div></th>
 												</tr>
 												<tr>
-													<th class="fzType2"><em class="required">必須</em>ギフトボックス選択</th>
+													<th class="fzType2 spMT5P"><em class="required">必須</em>ギフトボックス選択</th>
 													<td>
 														<div class="select-box pcW180">
 															<select name="select" id="select3">
@@ -401,7 +401,7 @@
 													</td>
 												</tr>
 												<tr>
-													<th class="fzType2">ギフトメッセージ入力</th>
+													<th class="fzType2 spMT5P">ギフトメッセージ入力</th>
 													<td><textarea name="" id="" class=""></textarea></td>
 												</tr>
 												<tr>
@@ -421,13 +421,13 @@
 										<table class="formTbl">
 											<tbody>
 												<tr>
-													<th class="fzType2">配送希望日</th>
+													<th class="fzType2 spMT0">配送希望日</th>
 													<td>
-														<div class="select-box pcW180">
-															<select name="select" id="select4">
-																<option value="">選択してください</option>
-																<option value="1">ギフト1</option>
-															</select>
+														<div class="u-btnPopUp pcW180">
+															<a href="">
+																<span class="txt">選択してください</span>
+																<div class="icn"><p><span></span></p></div>
+															</a>
 														</div>
 													</td>
 												</tr>

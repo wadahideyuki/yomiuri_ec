@@ -1564,6 +1564,59 @@ blockquote:before {
     border-radius: 5px;
   }
 }
+.u-btnPopUp > a {
+  display: block;
+  padding: 2.6666666667vw 4vw;
+  color: #333;
+  border: 1px solid #999;
+  border-radius: 5px;
+  position: relative;
+}
+@media print, screen and (max-width: 750px) {
+  .u-btnPopUp > a {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+.u-btnPopUp > a .icn {
+  width: 3.6vw;
+  height: 3.8666666667vw;
+  margin: auto;
+  border-bottom: 0.2666666667vw solid #f49c00;
+  border-left: 0.2666666667vw solid #f49c00;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4vw;
+}
+.u-btnPopUp > a .icn p {
+  width: 100%;
+  height: 93.1034482759%;
+  border: 0.2666666667vw solid #f49c00;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0.5333333333vw;
+  left: 0.5333333333vw;
+}
+.u-btnPopUp > a .icn p span {
+  width: 51.8518518519%;
+  height: 51.8518518519%;
+  border-top: 0.2666666667vw solid #f49c00;
+  border-right: 0.2666666667vw solid #f49c00;
+  position: absolute;
+  bottom: 0.6666666667vw;
+  left: 0.5333333333vw;
+}
+.u-btnPopUp > a .icn p span:before {
+  content: "";
+  width: 140%;
+  border-top: 0.1333333333vw solid #f49c00;
+  position: absolute;
+  top: 0.5333333333vw;
+  right: -0.4vw;
+  transform: rotate(-45deg);
+}
 .u-icn:before {
   content: "";
   display: inline-block;
