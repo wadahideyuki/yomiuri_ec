@@ -85,7 +85,10 @@ $img_path: "/assets/img/";
         .price-total{
 					&.withBDT{
 						padding-top: 12px;
-						border-top: 1px solid #4d4d4d;
+						border-top: 2px solid #4d4d4d;
+						@include pc{
+							margin-top: 40px;
+						}
 					}
 				}
         @include pc{
@@ -363,74 +366,6 @@ $img_path: "/assets/img/";
     }
 
 	/* 配送先情報入力 */
-	.receive-flow-step{
-		margin: 4% 8% 6% 8%;
-		color: #c3c3c3;
-		@include vw(24);
-		ul{
-			display: flex;
-			justify-content: space-between;
-			position: relative;
-			&:before{
-				content: "";
-				background-color: #e4ddcd;
-				height: vw(4);
-				position: absolute;
-				top: 36%;
-				left: 12%;
-				right: 12%;
-			}
-		}
-		li{
-			width: 25%;
-			text-align: center;
-			font-weight: bold;
-			em{
-				display: block;
-				margin-bottom: 0.5em;
-			}
-			p{
-				&:before{
-					content: "";
-					display: block;
-					background-color: #e4ddcd;
-					width: vw(32);
-					height: vw(32);
-					margin: auto;
-					border-radius: 50%;
-					position: relative;
-				}
-				span{
-					display: block;
-					margin-top: 1em;
-				}
-			}
-		}
-		&.step1 li:nth-child(1),
-		&.step2 li:nth-child(2),
-		&.step3 li:nth-child(3),
-		&.step4 li:nth-child(4){
-			color: #666;
-		}
-		&.step1 li:nth-child(1) p:before,
-		&.step2 li:nth-child(2) p:before,
-		&.step3 li:nth-child(3) p:before,
-		&.step4 li:nth-child(4) p:before{
-			transform: scale(1.2)
-		}
-		&.step1 li:nth-child(1) p:before{
-			background:url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-		}
-		&.step2 li:nth-child(2) p:before{
-			background:url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-		}
-		&.step3 li:nth-child(3) p:before{
-			background:url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-		}
-		&.step4 li:nth-child(4) p:before{
-			background:url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-		}
-	}
 	.receiveAdrs{
 		border: 1px solid #666;
 		border-radius: 5px;
@@ -482,13 +417,175 @@ $img_path: "/assets/img/";
 
 			}
 		}
+		@include pc{
+			margin-top: 25px;
+			> ul{
+				> li{
+					.pd{
+						padding: 15px 20px;
+						&.withBtn{
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+						}
+					}
+					.radio{
+						label{
+							span{
+								font-size: 14px;
+								small{
+									margin-top: 5px;
+									font-size: 11px;
+									line-height: 1.8;
+								}
+							}
+						}
+					}
+					.btnWrap{
+						margin-top: 0;
+						a{
+							padding: 8px 40px;
+							font-size: 12px;
+							transition: 0.3s;
+							&:hover{
+								opacity: 0.6;
+							}
+						}
+					}
+					& + li{
+					}
+					.formBox{
+						padding: 20px 40px 25px;
+						.formTbl{
+							.layer2{
+								tr{
+									> th{
+										width: 3em;
+									}
+									& + tr{
+										> th{
+											width: 4em;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	.note1{
 		color: #646464;
 		@include vw(24);
+		@include pc{
+			font-size: 12px;
+		}
 	}
 	.note2{
 		color: #4d4d4d;
 		@include vw(18);
+		@include pc{
+			font-size: 10px;
+		}
+	}
+	&.pageReceive{
+		@include pc{
+			width: auto;
+			padding-bottom: 0;
+			.l-container{
+				background-color: #fff;
+				padding: 40px 0 50px;
+			}
+			.l-wrapper{
+				width: 1000px;
+				margin: auto;
+			}
+		}
+	}
+	.formBox.is_pageReceiveType1{
+		@include pc{
+			> .formTbl{
+				> tbody{
+					> tr{
+						>th{
+							width: 210px;
+							padding: 25px 0;
+						}
+						> td{
+							padding: 25px 0;
+							.formTbl{
+								th, td{
+									padding: 25px 0;
+								}
+							}
+						}
+					}
+				}
+				&.is_type2{
+					> tbody{
+						> tr{
+							>th{
+								width: 60px;
+							}
+						}
+					}
+				}
+			}
+			.fzType2{
+				font-size: 14px;
+			}
+		}
+	}
+	.newAdrs{
+		@include pc{
+			.formBox{
+				> .formTbl{
+					> tbody{
+						> tr{
+							>th{
+								padding: 15px 0;
+							}
+							> td{
+								padding: 15px 0;
+								.formTbl{
+									th, td{
+										padding: 15px 0;
+									}
+									th{
+										width: 160px;
+									}
+								}
+							}
+						}
+					}
+					&.is_type2{
+						> tbody{
+							> tr{
+								> th{
+									width: 50px;
+								}
+							}
+						}
+					}
+					.colInForm{
+						&.address{
+							display: block;
+							li{
+								width: 80px;
+							}
+							dd{
+								margin-top: 10px;
+							}
+						}
+						&.tel{
+							li{
+								width: 80px;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

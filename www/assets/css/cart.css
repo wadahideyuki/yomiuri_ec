@@ -328,7 +328,12 @@ fade
 }
 #pageCart .price-box .price-total.withBDT {
   padding-top: 12px;
-  border-top: 1px solid #4d4d4d;
+  border-top: 2px solid #4d4d4d;
+}
+@media print, screen and (min-width: 751px) {
+  #pageCart .price-box .price-total.withBDT {
+    margin-top: 40px;
+  }
 }
 @media print, screen and (min-width: 751px) {
   #pageCart .price-box {
@@ -681,71 +686,6 @@ fade
   max-width: 310px;
   margin: 0 auto;
 }
-#pageCart .receive-flow-step {
-  margin: 4% 8% 6% 8%;
-  color: #c3c3c3;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart .receive-flow-step {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-#pageCart .receive-flow-step ul {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-#pageCart .receive-flow-step ul:before {
-  content: "";
-  background-color: #e4ddcd;
-  height: 0.5333333333vw;
-  position: absolute;
-  top: 36%;
-  left: 12%;
-  right: 12%;
-}
-#pageCart .receive-flow-step li {
-  width: 25%;
-  text-align: center;
-  font-weight: bold;
-}
-#pageCart .receive-flow-step li em {
-  display: block;
-  margin-bottom: 0.5em;
-}
-#pageCart .receive-flow-step li p:before {
-  content: "";
-  display: block;
-  background-color: #e4ddcd;
-  width: 4.2666666667vw;
-  height: 4.2666666667vw;
-  margin: auto;
-  border-radius: 50%;
-  position: relative;
-}
-#pageCart .receive-flow-step li p span {
-  display: block;
-  margin-top: 1em;
-}
-#pageCart .receive-flow-step.step1 li:nth-child(1), #pageCart .receive-flow-step.step2 li:nth-child(2), #pageCart .receive-flow-step.step3 li:nth-child(3), #pageCart .receive-flow-step.step4 li:nth-child(4) {
-  color: #666;
-}
-#pageCart .receive-flow-step.step1 li:nth-child(1) p:before, #pageCart .receive-flow-step.step2 li:nth-child(2) p:before, #pageCart .receive-flow-step.step3 li:nth-child(3) p:before, #pageCart .receive-flow-step.step4 li:nth-child(4) p:before {
-  transform: scale(1.2);
-}
-#pageCart .receive-flow-step.step1 li:nth-child(1) p:before {
-  background: url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-}
-#pageCart .receive-flow-step.step2 li:nth-child(2) p:before {
-  background: url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-}
-#pageCart .receive-flow-step.step3 li:nth-child(3) p:before {
-  background: url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-}
-#pageCart .receive-flow-step.step4 li:nth-child(4) p:before {
-  background: url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
-}
 #pageCart .receiveAdrs {
   border: 1px solid #666;
   border-radius: 5px;
@@ -796,6 +736,47 @@ fade
 #pageCart .receiveAdrs > ul > li .formBox .formTbl .layer2 tr > th {
   width: 12%;
 }
+@media print, screen and (min-width: 751px) {
+  #pageCart .receiveAdrs {
+    margin-top: 25px;
+  }
+  #pageCart .receiveAdrs > ul > li .pd {
+    padding: 15px 20px;
+  }
+  #pageCart .receiveAdrs > ul > li .pd.withBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #pageCart .receiveAdrs > ul > li .radio label span {
+    font-size: 14px;
+  }
+  #pageCart .receiveAdrs > ul > li .radio label span small {
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  #pageCart .receiveAdrs > ul > li .btnWrap {
+    margin-top: 0;
+  }
+  #pageCart .receiveAdrs > ul > li .btnWrap a {
+    padding: 8px 40px;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  #pageCart .receiveAdrs > ul > li .btnWrap a:hover {
+    opacity: 0.6;
+  }
+  #pageCart .receiveAdrs > ul > li .formBox {
+    padding: 20px 40px 25px;
+  }
+  #pageCart .receiveAdrs > ul > li .formBox .formTbl .layer2 tr > th {
+    width: 3em;
+  }
+  #pageCart .receiveAdrs > ul > li .formBox .formTbl .layer2 tr + tr > th {
+    width: 4em;
+  }
+}
 #pageCart .note1 {
   color: #646464;
 }
@@ -805,6 +786,11 @@ fade
     font-size: 3.2vw;
   }
 }
+@media print, screen and (min-width: 751px) {
+  #pageCart .note1 {
+    font-size: 12px;
+  }
+}
 #pageCart .note2 {
   color: #4d4d4d;
 }
@@ -812,5 +798,71 @@ fade
   #pageCart .note2 {
     font-size: 9px;
     font-size: 2.4vw;
+  }
+}
+@media print, screen and (min-width: 751px) {
+  #pageCart .note2 {
+    font-size: 10px;
+  }
+}
+@media print, screen and (min-width: 751px) {
+  #pageCart.pageReceive {
+    width: auto;
+    padding-bottom: 0;
+  }
+  #pageCart.pageReceive .l-container {
+    background-color: #fff;
+    padding: 40px 0 50px;
+  }
+  #pageCart.pageReceive .l-wrapper {
+    width: 1000px;
+    margin: auto;
+  }
+}
+@media print, screen and (min-width: 751px) {
+  #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > th {
+    width: 210px;
+    padding: 25px 0;
+  }
+  #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > td {
+    padding: 25px 0;
+  }
+  #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > td .formTbl th, #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > td .formTbl td {
+    padding: 25px 0;
+  }
+  #pageCart .formBox.is_pageReceiveType1 > .formTbl.is_type2 > tbody > tr > th {
+    width: 60px;
+  }
+  #pageCart .formBox.is_pageReceiveType1 .fzType2 {
+    font-size: 14px;
+  }
+}
+@media print, screen and (min-width: 751px) {
+  #pageCart .newAdrs .formBox > .formTbl > tbody > tr > th {
+    padding: 15px 0;
+  }
+  #pageCart .newAdrs .formBox > .formTbl > tbody > tr > td {
+    padding: 15px 0;
+  }
+  #pageCart .newAdrs .formBox > .formTbl > tbody > tr > td .formTbl th, #pageCart .newAdrs .formBox > .formTbl > tbody > tr > td .formTbl td {
+    padding: 15px 0;
+  }
+  #pageCart .newAdrs .formBox > .formTbl > tbody > tr > td .formTbl th {
+    width: 160px;
+  }
+  #pageCart .newAdrs .formBox > .formTbl.is_type2 > tbody > tr > th {
+    width: 50px;
+  }
+  #pageCart .newAdrs .formBox > .formTbl .colInForm.address {
+    display: block;
+  }
+  #pageCart .newAdrs .formBox > .formTbl .colInForm.address li {
+    width: 80px;
+  }
+  #pageCart .newAdrs .formBox > .formTbl .colInForm.address dd {
+    margin-top: 10px;
+  }
+  #pageCart .newAdrs .formBox > .formTbl .colInForm.tel li {
+    width: 80px;
   }
 }

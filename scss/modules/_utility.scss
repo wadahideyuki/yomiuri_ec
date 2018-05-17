@@ -54,6 +54,18 @@
 				border-bottom-width: 1px;
 				box-shadow: 0 8px 0 #f4f4f4;
 			}
+			&.is_type2{
+				@include pc{
+					background-color: #fff;
+					margin-bottom: 0;
+					padding-bottom: 20px;
+					font-size: 25px;
+					text-align: center;
+					border-bottom-color: #c9c9c9;
+					box-shadow: 0 16px 0 #f4f4f4;
+					position: relative;
+				}
+			}
 		}
 		&3{
 			display: none;
@@ -66,6 +78,7 @@
 			}
 		}
 	}
+	
 	/* ボタン */
 	&btn{
 		display: block;
@@ -212,14 +225,15 @@
 			padding: vw(10) vw(20);
 			border-radius: vw(8);
 			@include pc{
-				padding: 10px 10px;
+				padding: 5px 10px;
+				font-size: 11px;
 				border-radius: 5px;
 			}
 		}
 		&PopUp{
 			> a{
 				display: block;
-				padding: vw(20) vw(30);
+				padding: vw(20) vw(70) vw(20) vw(30);
 				color: #333;
 				@include vw(28);
 				border: 1px solid #999;
@@ -254,6 +268,7 @@
 							position: absolute;
 							bottom: vw(5);
 							left: vw(4);
+							overflow: hidden;
 							&:before{
 								content: "";
 								width: 140%;
@@ -262,6 +277,39 @@
 								top: vw(4);
 								right: vw(-3);
 								transform: rotate(-45deg);
+							}
+						}
+					}
+				}
+			}
+			@include pc{
+				> a{
+					padding: 10px 40px 10px 20px;
+					font-size: 14px;
+					.txt{
+					}
+					.icn{
+						width: 14px;
+						height: 15px;
+						border-width: 0 0 1px 1px;
+						right: 15px;
+						p{
+							height: 14px;
+							border-width: 1px;
+							bottom: 2px;
+							left: 2px;
+							span{
+								width: 7px;
+								height: 7px;
+								border-width: 1px 1px 0 0;
+								bottom: 2px;
+								left: 2px;
+								&:before{
+									width: 120%;
+									border-top-width: 1px;
+									top: 1.5px;
+									right: -2px;
+								}
 							}
 						}
 					}
@@ -789,6 +837,98 @@
 			}
 		}
 	}
+	&receive-flow-step{
+		margin: 4% 8% 6% 8%;
+		color: #c3c3c3;
+		@include vw(24);
+		ul{
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			&:before{
+				content: "";
+				background-color: #e4ddcd;
+				height: vw(4);
+				position: absolute;
+				top: 36%;
+				left: 12%;
+				right: 12%;
+			}
+		}
+		li{
+			width: 25%;
+			text-align: center;
+			font-weight: bold;
+			em{
+				display: block;
+				margin-bottom: 0.5em;
+			}
+			p{
+				&:before{
+					content: "";
+					display: block;
+					background-color: #e4ddcd;
+					width: vw(32);
+					height: vw(32);
+					margin: auto;
+					border-radius: 50%;
+					position: relative;
+				}
+				span{
+					display: block;
+					margin-top: 1em;
+				}
+			}
+		}
+		&.step1 li:nth-child(1),
+		&.step2 li:nth-child(2),
+		&.step3 li:nth-child(3),
+		&.step4 li:nth-child(4){
+			color: #666;
+		}
+		&.step1 li:nth-child(1) p:before,
+		&.step2 li:nth-child(2) p:before,
+		&.step3 li:nth-child(3) p:before,
+		&.step4 li:nth-child(4) p:before{
+			background:url(../img/icon/icn_baseball.svg) 0 0 no-repeat;
+			transform: scale(1.2)
+		}
+		@include pc{
+			width: 640px;
+			margin: 0 auto 30px;
+			font-size: 12px;
+			ul{
+				&:before{
+					height: 4px;
+					top: 47px;
+				}
+			}
+			li{
+				em{
+					margin-bottom: 15px;
+				}
+				p{
+					&:before{
+						width: 32px;
+						height: 32px;
+					}
+					span{
+						margin-top: 1em;
+					}
+				}
+			}
+			&.step1 li:nth-child(1),
+			&.step2 li:nth-child(2),
+			&.step3 li:nth-child(3),
+			&.step4 li:nth-child(4){
+			}
+			&.step1 li:nth-child(1) p:before,
+			&.step2 li:nth-child(2) p:before,
+			&.step3 li:nth-child(3) p:before,
+			&.step4 li:nth-child(4) p:before{
+			}
+		}
+	}
 }
 
 
@@ -826,7 +966,7 @@
 				border-width: 6px;
 			}
 			span{
-				padding: 0.15em 0 0 0.5em;
+				padding: 0.15em 0 0 0.8em;
 			}
 		}
 	}
@@ -870,13 +1010,20 @@
 		input{
 		}
 		label{
-			&:before{
-				width: 10px;
-				height: 10px;
-				border-width: 6px;
+			div{
+				width: 18px;
+				height: 18px;
+				border-radius: 3px;
 			}
 			span{
-				padding: 0.15em 0 0 0.5em;
+			}
+		}
+		input:checked + label div{
+			&:before{
+				margin-top: -3px;
+				width: 8px;
+				height: 4px;
+				border-width: 0 0 2px 2px;
 			}
 		}
 	}
@@ -963,7 +1110,8 @@ textarea{
 }
 .err{
 	background-color: #fae6e8 !important;
-	border: 2px solid #d14835 !important;
+	border: 1px solid #d14835 !important;
+	box-shadow: 0 0 0 1px #d14835 !important;
 	@include pc{
 	}
 }
@@ -1001,6 +1149,9 @@ textarea{
 	.formTbl{
 		display: block;
 		color: #3a3a3a;
+		th, td{
+			vertical-align: top;
+		}
 		> tbody{
 			display: block;
 			> tr{
@@ -1068,11 +1219,23 @@ textarea{
 				&.hyphen{
 					width: 5% !important;
 					@include vw(36);
+					font-weight: bold;
 					text-align: center;
+					@include pc{
+						width: 25px !important;
+					}
 				}
 			}
 			dd{
 				margin-top: 3%;
+			}
+			@include pc{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				dd{
+					margin-top: 0;
+				}
 			}
 			&.address{
 				li{
@@ -1080,10 +1243,20 @@ textarea{
 				}
 				dd{
 				}
+				@include pc{
+					li{
+						width: 90px;
+					}
+				}
 			}
 			&.tel{
 				li{
 					width: 28%;
+				}
+				@include pc{
+					li{
+						width: 90px;
+					}
 				}
 			}
 		}
@@ -1127,8 +1300,7 @@ textarea{
 					& + tr{
 						border-top: 1px solid #c9c9c9;
 					}
-					&:last-child{
-						border-top: none;
+					&.pcBDTN{
 						> th{
 							padding-top: 15px;
 						}
@@ -1151,6 +1323,18 @@ textarea{
 					}
 				}
 			}
+			&.is_pcBlk{
+				display: block;
+				> tbody{
+					display: block;
+					> tr{
+						display: block;
+						> th, > td{
+							display: block;
+						}
+					}
+				}
+			}
 			.layer2{
 				tr{
 					> th{
@@ -1164,6 +1348,30 @@ textarea{
 						}
 						> td{
 							padding-top: 30px;
+						}
+					}
+				}
+				&.is_pcType2{
+					display: block;
+					tbody{
+						display: flex;
+						align-items: flex-start;
+					}
+					tr{
+						display: flex;
+						> th{
+							padding-top: 12px !important;
+						}
+						> td{
+						}
+						+ tr{
+							> th{
+								width: 4em;
+								padding-left: 1em;
+							}
+							> td{
+								padding-top: 0;
+							}
 						}
 					}
 				}
@@ -1187,46 +1395,5 @@ textarea{
 		}
 	}
 }
-
-
-/* その他便利クラス */
-//SP
-@include sp{
-	//backgroundColor
-	.spBgWhite{background-color: #fff;}
-	//width
-	.spW100P{width: 100% !important;}
-	//margin
-	.spMT0{margin-top: 0 !important;}
-	.spMT1P{margin-top: 1% !important;}
-	.spMT2P{margin-top: 2% !important;}
-	.spMT3P{margin-top: 3% !important;}
-	.spMT4P{margin-top: 4% !important;}
-	.spMT5P{margin-top: 5% !important;}
-	.spMT10P{margin-top: 10% !important;}
-	.spMT15P{margin-top: 15% !important;}
-	.spMT20P{margin-top: 20% !important;}
-	.spMT25P{margin-top: 25% !important;}
-	.spMT30P{margin-top: 30% !important;}
-	//padding
-	.spPT0{padding-top: 0 !important;}
-	//fontSize
-	.spFz24{@include vw(24);}
-}
-//PC
-@include pc{
-	//width
-	.pcW80{width: 80px !important;}
-	.pcW180{width: 180px !important;}
-	.pcW220{width: 220px !important;}
-	.pcW296{width: 296px !important;}
-	.pcW340{width: 340px !important;}
-	.pcW625{width: 625px !important;}
-	//padding
-	.pcPT15{
-		padding-top: 15px !important;
-	}
-}
-
 
 

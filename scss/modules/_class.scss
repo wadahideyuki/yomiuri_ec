@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+//SP
+@include sp{
+	//backgroundColor
+	.spBgWhite{background-color: #fff;}
+	//width
+	.spWA{width: auto !important;}
+	.spW100P{width: 100% !important;}
+	//margin
+	.spMT0{margin-top: 0 !important;}
+	.spMT1P{margin-top: 1% !important;}
+	.spMT2P{margin-top: 2% !important;}
+	.spMT3P{margin-top: 3% !important;}
+	.spMT4P{margin-top: 4% !important;}
+	.spMT5P{margin-top: 5% !important;}
+	.spMT10P{margin-top: 10% !important;}
+	.spMT15P{margin-top: 15% !important;}
+	.spMT20P{margin-top: 20% !important;}
+	.spMT25P{margin-top: 25% !important;}
+	.spMT30P{margin-top: 30% !important;}
+	//padding
+	.spPT0{padding-top: 0 !important;}
+	//fontSize
+	.spFz24{@include vw(24);}
+}
+
+
+//PC
+@include pc{
+	//width
+	.pcWA{width: auto !important;}
+	.pcW80{width: 80px !important;}
+	.pcW100{width: 100px !important;}
+	.pcW110{width: 110px !important;}
+	.pcW120{width: 120px !important;}
+	.pcW140{width: 140px !important;}
+	.pcW150{width: 150px !important;}
+	.pcW180{width: 180px !important;}
+	.pcW220{width: 220px !important;}
+	.pcW260{width: 260px !important;}
+	.pcW296{width: 296px !important;}
+	.pcW340{width: 340px !important;}
+	.pcW625{width: 625px !important;}
+	.pcW100P{width: 100% !important;}
+	//margin
+	.pcMA{margin: auto !important;}
+	.pcMT80{margin-top: 80px !important;}
+	.pcMT100{margin-top: 100px !important;}
+	//padding
+	.pcPT0{padding-top: 0 !important;}
+	.pcPT5{padding-top: 5px !important;}
+	.pcPT10{padding-top: 10px !important;}
+	.pcPT15{padding-top: 15px !important;}
+	.pcPB0{padding-bottom: 0 !important;}
+	.pcPB10{padding-bottom: 10px !important;}
+	//fontSize
+	.pcFz8{font-size: 8px !important;}
+	.pcFz9{font-size: 9px !important;}
+	.pcFz10{font-size: 10px !important;}
+	.pcFz11{font-size: 11px !important;}
+	.pcFz12{font-size: 12px !important;}
+	//線
+	.pcBDTN{border-top: none !important;}
+	.pcBDT1{border-top: 1px solid #c9c9c9 !important;}
+}
