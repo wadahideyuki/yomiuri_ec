@@ -135,6 +135,13 @@
                     text-decoration: underline;
                 }
             }
+          &__inner{
+            padding-left: 60px;
+            padding-bottom: 10px;
+            li{
+              padding: 5px 0;
+            }
+          }
         }
         &__twitter {
             .twitter-timeline {

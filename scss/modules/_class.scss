@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+.dis{
+	&I{display:inline !important;}
+	&B{display:block !important;}
+	&IB{display:inline-block !important;}
+	&T{display:table !important;}
+	&TC{display:table-cell !important;}
+	&N{display:none !important;}
+	&F{display: flex !important;}
+}
+
+.ta {
+	&L{text-align: left !important;}
+	&R{text-align: right !important;}
+	&C{text-align: center !important;}
+}
+.va {
+	&T{vertical-align: top !important;}
+	&M{vertical-align: middle !important;}
+	&B{vertical-align: bottom !important;}
+	&TB{vertical-align: text-bottom !important;}
+}
 //SP
 @include sp{
 	//backgroundColor
